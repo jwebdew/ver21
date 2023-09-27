@@ -11,8 +11,8 @@
 
 - 다양한 레이아웃 표현은 behance, gdweb,  dbcut 참고
 -----------------------------------------------------------------------------
-📢 스미스티
-📢 마녀공장
+📢 스미스티<br />
+📢 마녀공장<br />
 📢 비에메종 (개별작업)
 
 📢리뉴얼
@@ -31,12 +31,12 @@
 
 # 포트폴리오 사이트 
 
-# https://jwebdew.github.io/ver23/01/
-# https://jwebdew.github.io/ver23/02/
-# https://hyebii.github.io/hrportfolio/
-# https://shinserim.github.io/portfolio/
-# https://gkdmswn14311431.github.io/portfolio2/
-# https://2jamie8.github.io/portfolio/portfolio.html
+https://jwebdew.github.io/ver23/01/
+https://jwebdew.github.io/ver23/02/
+https://hyebii.github.io/hrportfolio/
+https://shinserim.github.io/portfolio/
+https://gkdmswn14311431.github.io/portfolio2/
+https://2jamie8.github.io/portfolio/portfolio.html
 
 
 
