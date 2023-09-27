@@ -1,0 +1,552 @@
+@charset 'utf-8';
+
+
+
+/*메인비주얼영역*/
+#mainvisual{
+    position:relative;
+}
+#mainvisual .slide_wrap{}
+#mainvisual .slide_wrap .slide_img{
+    width:100%;
+    height:454px;
+    background:url(../images/mainvisual1.jpg) no-repeat center/cover;
+    text-indent:-9999px;
+}
+
+#mainvisual .txt_wrap{
+    position:absolute;
+    top:74px;
+    left:50%;
+    margin-left:-300px;
+    /*transform:translateX(-50%) : 너비를 모를 때(예를 들어 글자) 사용 > 위의 방법과 같은 효과*/
+    text-align:center;
+}
+#mainvisual .txt_wrap .main_tt1{
+    font-size:42px;
+    color:#fff;
+    font-weight:bold;
+}
+#mainvisual .txt_wrap .main_tt2{
+    font-size:24px;
+    color:#fff;
+    font-weight:bold;
+    margin:20px 0 62px;
+}
+#mainvisual .txt_wrap .main_search{
+    width:600px;
+    height:118px;
+    background:rgba(0,0,0,0.5);
+    border-radius:3px;
+    padding:20px 20px 0;
+}
+#mainvisual .txt_wrap .main_search .search_wrap{
+    width:100%;
+    height:50px;
+    background:#fff;
+    position:relative;
+    text-align:left; /*이전에 줬던 텍스트 가운데 정렬 때문에 값을 다시 바꿔준다.*/
+}
+#mainvisual .txt_wrap .main_search .search_wrap input{
+    border:none;
+    width:520px; /*원래는 550px이지만 패딩값을 빼야하기 때문에 520px*/
+    height:100%;
+    padding:0 15px;
+    color:#b3b3b3;
+    font-size:19px;
+}
+#mainvisual .txt_wrap .main_search .search_wrap input::placeholder{
+    color:#757575;
+}
+#mainvisual .txt_wrap .main_search .search_wrap .btn{
+    position:absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:50px;
+    background:url(../images/ico_search_26x26.gif) no-repeat center;
+    text-indent:-9999px;
+    border:none;
+}
+#mainvisual .txt_wrap .main_search .city{
+    margin-top:11px;
+}
+#mainvisual .txt_wrap .main_search .city p{
+    color:#fff;
+    font-size:13px;
+}
+#mainvisual .txt_wrap .main_search .city p a{
+    color:#fff;
+}
+#mainvisual .txt_wrap .main_search .city .txt_L{
+    float:left;
+}
+#mainvisual .txt_wrap .main_search .city .txt_L a:hover{
+    text-decoration:underline;
+}
+#mainvisual .txt_wrap .main_search .city .txt_R{
+    float:right;
+}
+#mainvisual .txt_wrap .main_search .city .txt_R a{}
+
+
+/*row1_인트로영역*/
+.row1{
+    width:100%;
+    padding:68px 0 70px;
+    background:#fff;
+}
+.row1 .inner{}
+.row1 .inner h3{
+    font-size:24px;
+    color:#363636;
+    text-align:center;
+    padding-bottom:42px;
+}
+
+.row1 .inner ul{
+    margin-bottom:32px;
+    width:1092px;
+    margin:0 auto;
+}
+.row1 .inner ul li{
+    float:left;
+    margin-right:24px;
+    width:348px;
+}
+.row1 .inner ul li:last-child{margin-right:0;}
+.row1 .inner ul li a{
+    display:block;
+}
+.row1 .inner ul li a img{
+    transition:all 0.6s;
+}
+.row1 .inner ul li:hover a img{
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    /*box-shadow:가로값 세로값 번지는정도 색상; >> 왼쪽 위 모서리가 기준임.*/
+}
+.row1 .inner ul li a span{
+    display:block;
+    /*span은 inline요소*/
+}
+.row1 .inner ul li a .tt1{
+    font-size:18px;
+    color:#1a7ad9;
+    font-weight:bold;
+    text-align:center;
+    margin:32px 0 27px;
+}
+.row1 .inner ul li a .tt2{
+    color:#555;
+    font-size:15px;
+    line-height:22px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.row1 .inner .guide_btn{
+    display:block;
+    color:#ff9320;
+    text-decoration:underline;
+    text-align:center;
+    font-weight:bold;
+}
+.row1 .inner .guide_btn:hover{
+    text-decoration:none;
+}
+
+/*row2_인기여행일정*/
+.row2{
+    width:100%;
+    padding:30px 0 70px;
+    background:#f6f6f6;
+}
+.row2 .bn{
+    width:1000px;
+    margin:0 auto;
+}
+.row2 .bn a{}
+.row2 .bn a img{
+    width:100%;
+    height:auto;
+}
+
+.row2 h3{
+    font-size:24px;
+    color:#363636;
+    font-weight:600px;
+    text-align:center;
+    margin-top:50px;
+}
+.row2 h3 p{
+    font-size:14px;
+    color:#808080;
+    font-weight:400;
+    margin:15px 0 42px;
+}
+
+.row2 .trip_list{
+    width:1092px;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+.row2 .trip_list li{
+    float:left;
+    width:346px;
+    margin-right:24px;
+    margin-bottom:30px;
+    border:1px solid #dfdfdf;
+}
+.row2 .trip_list li:hover{
+    border:1px solid #1a7ad9;
+}
+.row2 .trip_list li:nth-child(3n){margin-right:0;}
+.row2 .trip_list .mr0{margin-bottom:0;}
+.row2 .trip_list li a{}
+.row2 .trip_list li a span{
+    display:block;
+}
+.row2 .trip_list li a .thumb{
+    position:relative;
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+.row2 .trip_list li a .thumb:after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background:linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,1));
+    /*(방향, 출발색상, 도착색상) >> 밑방향으로, 투명한 검정, 불투명한 검정*/
+}
+.row2 .trip_list li a .thumb img{
+    width:100%;
+    height:auto;
+    transition:all 2.5s;
+}
+.row2 .trip_list li:hover a .thumb img{
+    transform:scale(1.2);
+}
+.row2 .trip_list li a .thumb .tit_wrap{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    z-index:1;
+}
+.row2 .trip_list li a .thumb .tit_wrap .date{
+    font-size:11px;
+    margin-bottom:7px;
+}
+.row2 .trip_list li a .thumb .tit_wrap .date:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.row2 .trip_list li a .thumb .tit_wrap .date .tt1{
+    float:left;
+    color:#1a7ad9;
+    margin-right:10px;
+}
+.row2 .trip_list li a .thumb .tit_wrap .date .tt2{
+    float:left;
+    color:#b3b3b3;
+}
+.row2 .trip_list li a .thumb .tit_wrap .tit{
+    font-size:14px;
+    color:#fff;
+    font-weight:600;
+}
+
+.row2 .trip_list li a .txt_box{
+    display:block;
+    padding:15px;
+    background:#fff;
+    font-size:13px;
+    color:#6f6f6f;
+    position:relative;
+}
+.row2 .trip_list li a .txt_box .thema{
+}
+.row2 .trip_list li a .txt_box .area{
+    margin:10px 0;
+}
+.row2 .trip_list li a .txt_box .user{
+    padding-left:20px;
+    background:url(../images/pn_list_user_icon.png) no-repeat 0 center;
+    line-height:15px;
+}
+.row2 .trip_list li a .txt_box .icon_wrap{
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+.row2 .trip_list li a .txt_box .icon_wrap .loca{
+    float:left;
+    padding-left:17px;
+    background:url(../images/pn_list_spot_icon.png) no-repeat 0 center;
+    line-height:17px;
+}
+.row2 .trip_list li a .txt_box .icon_wrap .view{
+    float:left;
+    padding-left:22px;
+    background:url(../images/pn_list_view_icon.png) no-repeat 0 center;
+    line-height:17px;
+    margin:0 10px;
+}
+.row2 .trip_list li a .txt_box .icon_wrap .copy{
+    float:left;
+    padding-left:16px;
+    background:url(../images/pn_list_copy_icon.png) no-repeat 0 center;
+    line-height:17px;
+}
+
+.row2 .more_btn{
+    display:block;
+    width:346px;
+    height:48px;
+    border:1px solid #dfdfdf;
+    background:#fff;
+    color:#808080;
+    font-weight:600;
+    text-align:center;
+    line-height:48px;
+    margin:0 auto;
+}
+
+/*row3_어디로 갈까*/
+.row3{
+    width:100%;
+    padding:68px 0 70px;
+    background:#fff;
+}
+.row3 h3{
+    font-size:24px;
+    color:#363636;
+    text-align:center;
+}
+.row3 h3 p{
+    font-size:14px;
+    color:#808080;
+    margin:15px 0 42px;
+    font-weight:400;
+}
+
+.row3 .tip{
+    width:1092px;
+    margin:0 auto;
+}
+.row3 .tip li{
+    float:left;
+    width:259px;
+    height:310px;
+    background:#fff;
+    border:1px solid #dfdfdf;
+    margin-right:15px;
+    margin-bottom:15px;
+}
+.row3 .tip li:first-child,
+.row3 .tip li:last-child{
+    width:537px;
+}
+.row3 .tip li:nth-child(3n){margin-right:0;}
+.row3 .tip .mb0{margin-bottom:0;}
+.row3 .tip li a{
+    display:block;
+    height:100%;
+}
+.row3 .tip li a span{
+    display:block;
+}
+.row3 .tip li a .thumb{
+    width:100%;
+    height:159px;
+    overflow:hidden;
+    position:relative;
+}
+.row3 .tip li a .thumb img{
+    width:100%;
+    height:auto;
+    transition:all 2.5s;
+}
+.row3 .tip li:hover a .thumb img{
+    transform:scale(1.2);
+}
+.row3 .tip li a .thumb .spot{
+    position:absolute;
+    left:15px;
+    top:10px;
+    font-size:14px;
+    font-weight:600;
+    color:#fff;
+    padding-left:22px;
+    background:url(../images/story_spot_cnt.png) no-repeat 0 center;
+    line-height:26px;
+}
+.row3 .tip li a .txt_box{
+    text-align:center;
+    padding:32px 20px 0;
+}
+.row3 .tip li a .txt_box .tt1{
+    font-size:15px;
+    font-weight:600;
+    color:#555;
+    margin-bottom:32px;
+}
+.row3 .tip li a .txt_box .tt2{
+    color:#808080;
+    line-height:22px;
+    height:44px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    word-wrap:break-word;
+}
+
+.row3 .more_btn{
+    display:block;
+    width:346px;
+    height:48px;
+    border:1px solid #dfdfdf;
+    background:#fff;
+    color:#808080;
+    font-weight:600;
+    text-align:center;
+    line-height:48px;
+    margin:15px auto 0;
+}
+
+/*row4_인기도시top10*/
+.row4{
+    width:100%;
+    padding:68px 0 88px;
+    background:#f6f6f6;
+}
+.row4 h3{
+    font-size:24px;
+    color:#363636;
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.row4 .city{
+    width:1092px;
+    margin:0 auto;
+}
+.row4 .city li{
+    position:relative;
+    float:left;
+    width:261px;
+    margin-right:16px;
+    margin-bottom:16px;
+}
+.row4 .city li:nth-child(3),
+.row4 .city li:nth-child(7){
+    margin-right:0;
+}
+.row4 .city li:first-child{
+    width:538px;
+}
+.row4 .city .mm{
+    margin-bottom:-277px;
+}
+.row4 .city .mb0{margin-bottom:0;}
+.row4 .city li a{}
+.row4 .city li a img{
+    width:100%;
+    height:auto;
+}
+.row4 .city li a span{
+    font-size:24px;
+    color:#fff;
+    font-weight:600;
+    text-shadow:0 0 10px rgba(0,0,0,0.8);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/*row5_모바일어스토리*/
+.row5{
+    width:100%;
+    background:url(../images/et_mobile_bg.png) no-repeat center/cover;
+    padding-top:35px;
+}
+.row5 .inner{
+    width:1092px;
+    margin:0 auto;
+}
+
+.row5 .inner .left{
+    float:left;
+    margin-left:30px;
+}
+.row5 .inner .left img{}
+
+.row5 .inner .right{
+    float:left;
+    margin-left:50px;
+}
+.row5 .inner .right h3{
+    font-size:26px;
+    color:#1a7ad9;
+    font-weight:600;
+    margin-top:38px;
+}
+.row5 .inner .right p{
+    font-size:13px;
+    color:#545454;
+    margin:16px 0 44px;
+    line-height:1.2;
+}
+.row5 .inner .right .store{
+    font-size:0;
+}
+.row5 .inner .right a{
+    margin-right:9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

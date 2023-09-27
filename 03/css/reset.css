@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Stencil Std';
+    src: url('../css/font/StencilStd.eot');
+    src: url('../css/font/StencilStd.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/StencilStd.woff2') format('woff2'),
+        url('../css/font/StencilStd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+li {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+    color:#000;
+    display:block;
+}
+html, body {
+    background:#f0f0f0;
+}

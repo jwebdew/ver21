@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유한킴벌리</title>
+    <!-- 제이쿼리 연결 -->
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <!-- 풀페이지 링크 연결 -->
+    <link href="lib/fullpage.min.css" rel="stylesheet"/>
+    <script src="lib/fullpage.js"></script>
+    <!-- aos 스크롤 링크 -->
+    <link href="lib/aos.css" rel="stylesheet">
+    <script src="lib/aos.js"></script>
+    <!-- xeicon 연결 -->
+    <link href="lib/xeicon.min.css" rel="stylesheet"/>
+    <!-- 구글폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 외부링크 연결 -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <h1 class="logo"><a href="index.html"><img src="img/logo_w.png"></a></h1>
+            <h1 class="m_logo"><a href="index.html"><img src="img/logo.png"></a></h1>
+            <ul class="menu">
+                <li><a href="#">
+                <i class="xi-search"></i><span>검색하기</span></i>
+                </a></li>
+                <li><a href="#">
+                <i class="xi-drag-handle"></i><span>메뉴</span></i>
+                </a></li>
+            </ul><!-- .menu E -->
+        </div><!-- .header_inner E -->
+        <nav class="gnb">
+            <div class="gnb_inner">
+                <img src="img/logo.png" alt="유한킴벌리 로고"/>
+                <a href="#"><i class="xi-close"><span>닫기</span></i></a>
+                <ul class="depth01">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="depth02">
+                            <li><a href="#">유한킴벌리</a></li>
+                            <li><a href="#">사업현황</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">제품안정정책</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">뉴스룸</a>
+                        <ul class="depth02">
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">YK on AIR</a></li>
+                            <li><a href="#">그래픽뉴스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">지속가능경영</a>
+                        <ul class="depth02">
+                            <li><a href="#">사회책임활동</a></li>
+                            <li><a href="#">공유가치창출(CSV)</a></li>
+                            <li><a href="#">환경경영</a></li>
+                            <li><a href="#">동반성장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객중심경영</a>
+                        <ul class="depth02">
+                            <li><a href="#">고객대응절차</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">문의접수</a></li>
+                            <li><a href="#">소비자 교육</a></li>
+                            <li><a href="#">정보형 컨텐츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드 사이트</a>
+                        <ul class="depth02">
+                            <li><a href="#">유아아동용품</a></li>
+                            <li><a href="#">여성용품</a></li>
+                            <li><a href="#">가정용품</a></li>
+                            <li><a href="#">시니어용품</a></li>
+                            <li><a href="#">스킨케어</a></li>
+                            <li><a href="#">산업위생용품</a></li>
+                            <li><a href="#">헬스케어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav><!-- .gnb E -->
+        <nav class="m_gnb">
+            <img src="img/logo.png" alt="유한킴벌리 로고"/>
+            <a href="#"><i class="xi-close"><span>닫기</span></i></a>
+            <ul class="m_depth01">
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="m_depth02">
+                        <li><a href="#">유한킴벌리</a></li>
+                        <li><a href="#">사업현황</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">제품안정정책</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">뉴스룸</a>
+                    <ul class="m_depth02">
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">YK on AIR</a></li>
+                        <li><a href="#">그래픽뉴스</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">지속가능경영</a>
+                    <ul class="m_depth02">
+                        <li><a href="#">사회책임활동</a></li>
+                        <li><a href="#">공유가치창출(CSV)</a></li>
+                        <li><a href="#">환경경영</a></li>
+                        <li><a href="#">동반성장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객중심경영</a>
+                    <ul class="m_depth02">
+                        <li><a href="#">고객대응절차</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">문의접수</a></li>
+                        <li><a href="#">소비자 교육</a></li>
+                        <li><a href="#">정보형 컨텐츠</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">브랜드 사이트</a>
+                    <ul class="m_depth02">
+                        <li><a href="#">유아아동용품</a></li>
+                        <li><a href="#">여성용품</a></li>
+                        <li><a href="#">가정용품</a></li>
+                        <li><a href="#">시니어용품</a></li>
+                        <li><a href="#">스킨케어</a></li>
+                        <li><a href="#">산업위생용품</a></li>
+                        <li><a href="#">헬스케어</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- .m_gnb E -->
+    </header><!-- header E -->
+
+    <p class="scroll">scroll down</p>
+
+  <div id="fullpage">
+    <div class="section " id="section0">
+        <div class="sect0_inner">
+            <p class="main_text">우리 강산 푸르게 푸르게</p>
+            <div class="bottom">
+                <p class="bottom_title">YUHAN KIMBERLY</p>
+                <i></i>
+                <div class="bottom_text">
+                    <p>유한킴벌리는 사람들이 일상에서 숲을 즐기고, 참여할 수 있는 터전을 만들고자 합니다.</p>
+                    <a class="bottom_btn" href="#">영상 보러가기</a>
+                </div>
+            </div>
+        </div><!-- .sect0_inner -->
+    </div><!-- .section0 E -->
+
+    <div class="section " id="section1">
+        <div class="sect1_inner">
+            <h2 class="pc_title1">MISSION<br/><span>& VISION</span></h2>
+            <h2 class="m_title1">MISSION& VISION</h2>
+            <div class="left">
+                <dl class="left_wrap">
+                    <dd class="left_title">더 나은 생활을 향한 믿음</dd>
+                    <dt class="left_text">
+                        유한킴벌리는 '초일류생활혁신 기업'의 경영목표와
+                        더 나은 생활을 향한 믿음을 바탕으로 우수한 제품,
+                        서비스, 환경을 제공함으로써
+                        고객에게 가치 있는 기업이 되고자 노력하겠습니다.
+                    </dt>
+                </dl>
+            </div><!-- .left E -->
+            <div class="right">
+                <ul>
+                    <li>
+                        <img src="img/cont02_icont01.png" alt="신뢰와 배려 아이콘"/>
+                        <dl>
+                            <dt>신뢰와 배려</dt>
+                            <dd>
+                                다양성을 존중하고 포용하며, 진심으로 배려하고 열린 마음으로 신뢰구축,
+                                안전, 삶의 질 향상, 열린 경영, 인재육성, 동반성장, 고객만족 등을 위해 노력하고 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="img/cont02_icont02.png" alt="신뢰와 배려 아이콘"/>
+                        <dl>
+                            <dt>책임과 공헌</dt>
+                            <dd>
+                                진정성을 가지고 윤리경영, 공정거래, 생명존중, 환경경영, 가족친화경영 등 사회적 책임을 다하기 위해 공헌하고 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="img/cont02_icont03.png" alt="신뢰와 배려 아이콘"/>
+                        <dl>
+                            <dt>도전과 창의</dt>
+                            <dd>
+                                성공을 확신하는 열정적인 자세로, 목표를 도전적으로 정하고, 창의적인 방법으로 지속적인 개선을 진행하고 있습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div><!-- .right E -->
+        </div>
+    </div><!-- .section1 E -->
+
+    <div class="section fp-auto-height" id="section2">
+        <div class="slide" id="slide1">
+            <i class="line line01"></i>
+            <div class="slide1_inner">
+                <i class="line line02"></i>
+                <i class="line line03"></i>
+                <i class="line line04"></i>
+                <i class="line line05"></i>
+                <h2 class="slide_title">BRAND</h2>
+                <p class="brand_intro">유한킴벌리의 패밀리 브랜드를 소개합니다</p>
+                <p class="sub_title">유아&middot;아동용품</p>
+                <article class="article01-1">
+                    <a href="#" class="article_inner">
+                        <img src="img/cont03_slide01-1.png" alt="유한킴벌리 하기스 로고" class="logo_w01"/>
+                        <div class="up01">
+                            <img src="img/cont03_slide01-1-hover.png" alt="유한킴벌리 하기스 로고"/>
+                            <dl class="slide_text_wrap">
+                                <dt class="inner_slide_title">행복한 우리 아기를 위해</dt>
+                                <dd class="slide_text">
+                                    Huggies의 이름 안에는 ‘Hug’가 있습니다.<br/>
+                                    아기에게 가장 편안한 세상은 엄마 아빠의 품이기에<br/>
+                                    하기스를 채운다는 건 엄마 아빠의 품으로<br/>
+                                    또 한번 안아주는 것입니다.<br/>
+                                    엄마 아빠의 품을 닮은 하기스로 꼬옥 안아주세요.
+                                </dd>
+                            </dl>
+                            <div class="slide_btn_wrap01">
+                                <a href="#" class="slide_btn01"><i class="xi-home"></i><span>BRAND SITE</span></i></a>
+                                <a href="#" class="slide_btn02"><i class="xi-cart"></i><span>SHOPPING</span></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="article01-2">
+                    <a href="#" class="article_inner">
+                        <img src="img/cont03_slide01-2.png" alt="유한킴벌리 하기스 로고" class="logo_w02"/>
+                        <div class="up02">
+                            <img src="img/cont03_slide01-2-hover.png" alt="유한킴벌리 하기스 로고"/>
+                            <dl class="slide_text_wrap">
+                                <dt class="inner_slide_title">밤쉬 걱정 없이 아침까지 편안하게</dt>
+                                <dd class="slide_text">
+                                    국내 어린이(만3세~11세)6명 중 1명은<br/>
+                                    수면 중 잠자리에 실례를 하는 '밤쉬'를 경험합니다.<br/>
+                                    밤쉬를 자연스러운 성장과정으로 이해해 주시고,<br/>
+                                    자신감을 지켜주는 굿나이트와 함께<br/>
+                                    아이에게 편안한 밤을 선물하세요.
+                                </dd>
+                            </dl>
+                            <div class="slide_btn_wrap01">
+                                <a href="#" class="slide_btn01"><i class="xi-home"></i><span>BRAND SITE</span></i></a>
+                                <a href="#" class="slide_btn02"><i class="xi-cart"></i><span>SHOPPING</span></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="article01-3">
+                    <a href="#" class="article_inner">
+                        <img src="img/cont03_slide01-3.png" alt="유한킴벌리 하기스 로고" class="logo_w03"/>
+                        <div class="up03">
+                            <img src="img/cont03_slide01-3-hover.png" alt="유한킴벌리 하기스 로고"/>
+                            <dl class="slide_text_wrap">
+                                <dt class="inner_slide_title">엄마를 닮은 육아용품 더블하트</dt>
+                                <dd class="slide_text">
+                                    더블하트는 엄마와 아기의 두 마음이 만난다는 의미를 담고 있으며<br/>
+                                    아기를 향한 엄마의 마음처럼 아기를 위해<br/>
+                                    아주 작은 부분까지 세심하게 배려하는 육아용품 브랜드입니다.<br/>
+                                    모유수유용품, 이유식기류, 위생용품, 밤달지원제품까지<br/>
+                                    유한킴벌리가 보증하는 더블하트를 직접 만나보세요.
+                                </dd>
+                            </dl>
+                            <div class="slide_btn_wrap01">
+                                <a href="#" class="slide_btn01"><i class="xi-home"></i><span>BRAND SITE</span></i></a>
+                                <a href="#" class="slide_btn02"><i class="xi-cart"></i><span>SHOPPING</span></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div><!-- .slide1_inner -->
+        </div><!-- .slide1 E -->
+
+        <div class="slide" id="slide2">
+            <i class="line line01"></i>
+            <div class="slide1_inner">
+                <i class="line line02"></i>
+                <i class="line line03"></i>
+                <i class="line line04"></i>
+                <i class="line line05"></i>
+                <h2 class="slide_title">BRAND</h2>
+                <p class="brand_intro">유한킴벌리의 패밀리 브랜드를 소개합니다</p>
+                <p class="sub_title">여성용품</p>
+                <article class="article01-1">
+                    <a href="#" class="article_inner">
+                        <img src="img/cont03_slide02-1.png" alt="유한킴벌리 하기스 로고" class="logo_w01"/>
+                        <div class="up01">
+                            <img src="img/cont03_slide02-1-hover.png" alt="유한킴벌리 하기스 로고"/>
+                            <dl class="slide_text_wrap">
+                                <dt class="inner_slide_title">산뜻하고 깨끗하게</dt>
+                                <dd class="slide_text">
+                                    그날에도 나답게 일상을 즐기며 새로움을 찾는<br/>
+                                    그녀들을 위해 만들어진 화이트 시크릿홀만의 오목한 흡수과학!
+                                </dd>
+                            </dl>
+                            <div class="slide_btn_wrap01">
+                                <a href="#" class="slide_btn01"><i class="xi-home"></i><span>BRAND SITE</span></i></a>
+                                <a href="#" class="slide_btn02"><i class="xi-cart"></i><span>SHOPPING</span></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="article01-2">
+                    <a href="#" class="article_inner">
+                        <img src="img/cont03_slide02-2.png" alt="유한킴벌리 하기스 로고" class="logo_w02"/>
+                        <div class="up02">
+                            <img src="img/cont03_slide02-2-hover.png" alt="유한킴벌리 하기스 로고"/>
+                            <dl class="slide_text_wrap">
+                                <dt class="inner_slide_title">마음까지 편안해서 좋은느낌</dt>
+                                <dd class="slide_text">
+                                    그 날도 평소처럼 내 피부가 편안함을 느낄 수 있도록,<br/>
+                                    마치 자연 속에서 쉴 때처럼 편안한 마음을 유지할 수 있도록,<br/>
+                                    좋은느낌만의 부드러운 감촉으로 피부는 물론<br/>
+                                    마음까지 편안하게 케어해 드립니다.
+                                </dd>
+                            </dl>
+                            <div class="slide_btn_wrap01">
+                                <a href="#" class="slide_btn01"><i class="xi-home"></i><span>BRAND SITE</span></i></a>
+                                <a href="#" class="slide_btn02"><i class="xi-cart"></i><span>SHOPPING</span></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="article01-3">
+                    <a href="#" class="article_inner">
+                        <img src="img/cont03_slide02-3.png" alt="유한킴벌리 하기스 로고" class="logo_w03"/>
+                        <div class="up03">
+                            <img src="img/cont03_slide02-3-hover.png" alt="유한킴벌리 하기스 로고"/>
+                            <dl class="slide_text_wrap">
+                                <dt class="inner_slide_title">자연 그대로, 안심할 수 있게</dt>
+                                <dd class="slide_text">
+                                    100% 북유럽 천연흡수소재와<br/>
+                                    까다로운 기준으로 엄선한 100% 유기농 순면 커버로<br/>
+                                    그날에도 나를 위한 안심과 건강을 전합니다.
+                                </dd>
+                            </dl>
+                            <div class="slide_btn_wrap01">
+                                <a href="#" class="slide_btn01"><i class="xi-home"></i><span>BRAND SITE</span></i></a>
+                                <a href="#" class="slide_btn02"><i class="xi-cart"></i><span>SHOPPING</span></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div><!-- .slide1_inner -->
+        </div><!-- .slide2 E -->
+    </div><!-- .section2 E -->
+
+    <div class="section " id="section3">
+        <div class="sect3_inner">
+            <div class="sect3_left">
+                <h2 class="pc_title2">TODAY'S<br/>FOCUS</h2>
+                <h2 class="m_title2">TODAY'S FOCUS</h2>
+                <p>유한킴벌리의 제품을 소개합니다</p>
+                <a href="#">more product<i class="xi-angle-right-min"></i></a>
+            </div><!-- .sect3_left -->
+            <div class="sect3_right">
+                <div class="sect3_line line06"></div>
+                <div class="sect3_line line08"></div>
+                <div class="sect3_line line09"></div>
+                <article class="right_top">
+                    <div class="sect3_line line07"></div>
+                    <div class="rt_img_wrap">
+                        <img src="img/cont04_img01.png" alt="유한킴벌리 하기스 프리미엄 아기 물티슈"/>
+                    </div>
+                    <div class="rt_wrap">
+                        <dl>
+                            <dt>유한킴벌리 하기스,<br/>프리미엄 아기 물티슈 출시</dt>
+                            <dd>천연펄프 함유된 특허기술 원단 적용해 부드러움과 닦임성 차별화</dd>
+                            <dd>유한킴벌리 생활혁신연구소 개발, 자사몰 맘큐 단독 출시</dd>
+                        </dl>
+                        <a href="#" class="btn_comm more">VIEW MORE</a>
+                        <a href="#" class="btn_comm shopping">SHOPPING</a>
+                    </div>
+                </article>
+                <div class="right_bottom">
+                    <article>
+                        <a href="#">
+                            <div class="rb_img_wrap">
+                                <img src="img/cont04_img02.png" alt="유한킴벌리 그린핑거 펜테딘"/>
+                            </div>
+                            <p>그린핑거 판테딘으로<br/>아기피부를 처음부터 건강하게!</p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="rb_img_wrap">
+                                <img src="img/cont04_img03.png" alt="유한킴벌리 크리넥스 손소독제겔"/>
+                            </div>
+                            <p>크리넥스 손소독제겔로<br/>세균을 없애고 안심을 더해요!</p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <div class="rb_img_wrap">
+                                <img src="img/cont04_img04.png" alt="유한킴벌리 스카트 버블 수세미"/>
+                            </div>
+                            <p>스카트 버블 수세미,<br/>하루 한 장으로 지키는 주방 위생</p>
+                        </a>
+                    </article>
+                    <article class="m_rt">
+                        <a href="#">
+                            <div class="rb_img_wrap">
+                                <img src="img/cont04_m_img01.png" alt="유한킴벌리 하기스 물티슈"/>
+                            </div>
+                            <p>유한킴벌리 하기스,<br/>프리미엄 아기 물티슈 출시</p>
+                        </a>
+                    </article>
+                </div>
+            </div><!-- .sect3_right -->
+        </div><!-- .sect3_inner -->
+    </div><!-- .section3 E -->
+
+    <div class="section fp-auto-height" id="section4">
+        <div class="footer_inner">
+            <div class="f_top">
+                <div class="f_top_left">
+                    <img src="img/logo_w.png" alt="유한킴벌리 로고"/>
+                    <div class="wrap">
+                        <a href="#">찾아오시는 길</a>
+                        <a href="#" class="personal">개인정보처리방침</a>
+                    </div>
+                </div>
+                <ul class="sns">
+                    <li><a href="#"><i class="xi-facebook"></i><span>페이스북</span></i></a></li>
+                    <li><a href="#"><i class="xi-instagram"></i><span>인스타그램</span></i></a></li>
+                    <li><a href="#"><i class="xi-youtube-play"></i><span>유튜브</span></i></a></li>
+                    <li><a href="#"><i class="xi-naver"></i><span>네이버 블로그</span></i></a></li>
+                </ul>
+            </div><!-- .f_top E -->
+            <div class="f_bottom">
+                <div class="f_bottom_left">
+                    <span>대표자 : 전재승</span>
+                    <span>주소 : 서울시 송파구 올림픽로 300 롯데월드타워 29층 (우)055551</span>
+                    <span>고객지원센터 : 080-022-7007</span>
+                    <span>사업자번호 : 120-81-11436</span>
+                </div>
+                <p class="f_bottom_right">Copyright &copy; Yuhan-Kimberly. All right Reserved.</p>
+            </div><!-- .f_bottom E -->
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        navigation: true,
+        navigationPosition: 'right',
+        scrollBar: true,
+        responsiveWidth: 1025,
+        afterResponsive: function(isResponsive){
+
+        }
+    });
+</script>
+<!-- <script>
+    AOS.init();
+</script> -->
+</body>
+</html>

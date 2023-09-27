@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>어스토리</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner cf">
+                <h1 class="logo"><a href="#"><img src="images/logo.png" alt="어스토리"></a></h1>
+                
+                <nav class="gnb">
+                    <ul class="cf">
+                        <li><a href="#">여행지</a></li>
+                        <li><a href="#">일정만들기</a></li>
+                        <li><a href="#">호텔</a></li>
+                        <li><a href="sub/sub4.html">이용방법</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="hd_right cf">
+                    <div class="search_wrap">
+                        <input type="text" placeholder="도시/장소를 찾아보세요"><!--placeholder:힌트텍스트-->
+                        <button class="btn">검색</button>
+                    </div>
+                    <a href="#" class="login">로그인</a>
+                    <a href="#" class="join">회원가입</a>
+                </div>
+            </div>
+        </header><!--헤더영역-->
+        
+        <div id="mainvisual">
+            <div class="slide_wrap">
+                <div class="slide_img">이미지설명</div>
+            </div>
+            
+            <div class="txt_wrap">
+                <p class="main_tt1">나만의 여행 플래너 어스토리!</p>
+                <p class="main_tt2">쉽고 빠르게 여행을 계획하세요.</p>
+                
+                <div class="main_search">
+                    <div class="search_wrap">
+                        <input type="text" placeholder="국가명, 도시명으로 검색">
+                        <button class="btn">검색</button>
+                    </div>
+                    
+                    <div class="city cf">
+                        <p class="txt_L">
+                            추천도시 :
+                            <a href="#">싱가포르</a>,
+                            <a href="#">파리</a>,
+                            <a href="#">홍콩</a>
+                        </p>
+                        <p class="txt_R"><a href="#">지도에서 검색 ></a></p>
+                    </div>
+                </div>
+            </div>
+        </div><!--메인비주얼영역-->
+        
+        <div id="container">
+            <section class="row1">
+               <div class="inner">
+                    <h3>어스토리에서 여행을 시작하세요!</h3>
+
+                    <ul class="cf">
+                        <li><a href="#"> <!--a안의 태그라서 sapn-->
+                            <img src="images/intro_1.jpg">
+                            <span class="tt1">여행정보</span>
+                            <span class="tt2">전 세계 800개 도시, 30만개의 관광명소, 음식점, 쇼핑 정보를 확인하세요.</span>
+                        </a></li><!--여행정보-->
+
+                        <li><a href="#">
+                            <img src="images/intro_2.jpg">
+                            <span class="tt1">여행일정</span>
+                            <span class="tt2">전 세계 100,000개 이상의 여행일정을 확인하고 나만의 일정을 계획해 보세요.</span>
+                        </a></li><!--여행일정-->
+
+                        <li><a href="#">
+                            <img src="images/intro_3.jpg">
+                            <span class="tt1">커뮤니티</span>
+                            <span class="tt2">여행자들과 정보를 공유하고, 궁금한 것은 언제든 물어보세요.</span>
+                        </a></li><!--커뮤니티-->
+                    </ul>
+
+                    <a href="#" class="guide_btn">사용방법이 궁금하신가요?</a>
+                </div>
+            </section><!--row1_인트로영역-->
+            
+            <section class="row2">
+                <div class="bn">
+                    <a href="#"><img src="images/bn.png" alt="배너설명"></a>
+                </div>
+
+                <h3>인기 여행일정
+                    <p>다른 여행자들의 일정을 참고해 나만의 여행을 계획해 보세요!</p>
+                </h3>
+
+                <ul class="trip_list cf">
+                    <li><a href="#">
+                        <span class="thumb">
+                            <img src="images/trip1.jpg">
+                            <span class="tit_wrap cf">
+                                <span class="date">
+                                    <span class="tt1">2019-07-01</span>
+                                    <span class="tt2">4DAYS</span>
+                                </span>
+                                <span class="tit">여행일정 타이틀</span>
+                            </span>
+                        </span>
+                        
+                        <span class="txt_box">
+                            <span class="thema">친구와 함께</span>
+                            <span class="area">홍콩, 마카오</span>
+                            <span class="user">사용자 이름</span>
+                            <span class="icon_wrap">
+                                <span class="loca">31</span>
+                                <span class="view">16</span>
+                                <span class="copy">19</span>
+                            </span>
+                        </span>
+                    </a></li><!--여행일정 리스트1-->
+                    
+                    <li><a href="#">
+                        <span class="thumb">
+                            <img src="images/trip2.jpg">
+                            <span class="tit_wrap">
+                                <span class="date">
+                                    <span class="tt1">2019-07-01</span>
+                                    <span class="tt2">4DAYS</span>
+                                </span>
+                                <span class="tit">여행일정 타이틀</span>
+                            </span>
+                        </span>
+                        
+                        <span class="txt_box">
+                            <span class="thema">친구와 함께</span>
+                            <span class="area">홍콩, 마카오</span>
+                            <span class="user">사용자 이름</span>
+                            <span class="icon_wrap">
+                                <span class="loca">31</span>
+                                <span class="view">16</span>
+                                <span class="copy">19</span>
+                            </span>
+                        </span>
+                    </a></li><!--여행일정 리스트2-->
+                    
+                    <li><a href="#">
+                        <span class="thumb">
+                            <img src="images/trip3.jpg">
+                            <span class="tit_wrap">
+                                <span class="date">
+                                    <span class="tt1">2019-07-01</span>
+                                    <span class="tt2">4DAYS</span>
+                                </span>
+                                <span class="tit">여행일정 타이틀</span>
+                            </span>
+                        </span>
+                        
+                        <span class="txt_box">
+                            <span class="thema">친구와 함께</span>
+                            <span class="area">홍콩, 마카오</span>
+                            <span class="user">사용자 이름</span>
+                            <span class="icon_wrap">
+                                <span class="loca">31</span>
+                                <span class="view">16</span>
+                                <span class="copy">19</span>
+                            </span>
+                        </span>
+                    </a></li><!--여행일정 리스트3-->
+                    
+                    <li class="mr0"><a href="#">
+                        <span class="thumb">
+                            <img src="images/trip4.jpg">
+                            <span class="tit_wrap">
+                                <span class="date">
+                                    <span class="tt1">2019-07-01</span>
+                                    <span class="tt2">4DAYS</span>
+                                </span>
+                                <span class="tit">여행일정 타이틀</span>
+                            </span>
+                        </span>
+                        
+                        <span class="txt_box">
+                            <span class="thema">친구와 함께</span>
+                            <span class="area">홍콩, 마카오</span>
+                            <span class="user">사용자 이름</span>
+                            <span class="icon_wrap">
+                                <span class="loca">31</span>
+                                <span class="view">16</span>
+                                <span class="copy">19</span>
+                            </span>
+                        </span>
+                    </a></li><!--여행일정 리스트4-->
+                    
+                    <li class="mr0"><a href="#">
+                        <span class="thumb">
+                            <img src="images/trip5.jpg">
+                            <span class="tit_wrap">
+                                <span class="date">
+                                    <span class="tt1">2019-07-01</span>
+                                    <span class="tt2">4DAYS</span>
+                                </span>
+                                <span class="tit">여행일정 타이틀</span>
+                            </span>
+                        </span>
+                        
+                        <span class="txt_box">
+                            <span class="thema">친구와 함께</span>
+                            <span class="area">홍콩, 마카오</span>
+                            <span class="user">사용자 이름</span>
+                            <span class="icon_wrap">
+                                <span class="loca">31</span>
+                                <span class="view">16</span>
+                                <span class="copy">19</span>
+                            </span>
+                        </span>
+                    </a></li><!--여행일정 리스트5-->
+                    
+                    <li class="mr0"><a href="#">
+                        <span class="thumb">
+                            <img src="images/trip6.jpg">
+                            <span class="tit_wrap">
+                                <span class="date">
+                                    <span class="tt1">2019-07-01</span>
+                                    <span class="tt2">4DAYS</span>
+                                </span>
+                                <span class="tit">여행일정 타이틀</span>
+                            </span>
+                        </span>
+                        
+                        <span class="txt_box">
+                            <span class="thema">친구와 함께</span>
+                            <span class="area">홍콩, 마카오</span>
+                            <span class="user">사용자 이름</span>
+                            <span class="icon_wrap">
+                                <span class="loca">31</span>
+                                <span class="view">16</span>
+                                <span class="copy">19</span>
+                            </span>
+                        </span>
+                    </a></li><!--여행일정 리스트6-->
+                </ul>
+
+                <a href="#" class="more_btn">56,065개의 추천일정 모두보기</a>
+            </section><!--row2_인기여행일정-->
+            
+            <section class="row3">
+                <h3>어디로 갈까?
+                    <p>팁에서 아이디어를 얻어보세요.</p>
+                </h3>
+                
+                <ul class="tip cf">
+                    <li><a href="#">
+                        <span class="thumb">
+                            <img src="images/tip1.jpg">
+                            <span class="spot">8</span>
+                        </span>
+                        <span class="txt_box">
+                            <span class="tt1">오사카, 빛나는 밤</span>
+                            <span class="tt2">야경까지 100% 완벽하게 오사카 느끼기</span>
+                        </span>
+                    </a></li><!--여행팁1-->
+                    
+                    <li><a href="#">
+                        <span class="thumb">
+                            <img src="images/tip2.jpg">
+                            <span class="spot">8</span>
+                        </span>
+                        <span class="txt_box">
+                            <span class="tt1">오사카, 빛나는 밤</span>
+                            <span class="tt2">대부분은 쿠알라룸프르하면 페트로나스 트윈타워밖에 알 지 못한다. 트윈타워와 함께 둘러볼 곳이 많은 매력덩어리 쿠알라룸프르!</span>
+                        </span>
+                    </a></li><!--여행팁2-->
+                    
+                    <li><a href="#">
+                        <span class="thumb">
+                            <img src="images/tip3.jpg">
+                            <span class="spot">8</span>
+                        </span>
+                        <span class="txt_box">
+                            <span class="tt1">오사카, 빛나는 밤</span>
+                            <span class="tt2">야경까지 100% 완벽하게 오사카 느끼기</span>
+                        </span>
+                    </a></li><!--여행팁3-->
+                    
+                    <li class="mb0"><a href="#">
+                        <span class="thumb">
+                            <img src="images/tip4.jpg">
+                            <span class="spot">8</span>
+                        </span>
+                        <span class="txt_box">
+                            <span class="tt1">오사카, 빛나는 밤</span>
+                            <span class="tt2">야경까지 100% 완벽하게 오사카 느끼기</span>
+                        </span>
+                    </a></li><!--여행팁4-->
+                    
+                    <li class="mb0"><a href="#">
+                        <span class="thumb">
+                            <img src="images/tip5.jpg">
+                            <span class="spot">8</span>
+                        </span>
+                        <span class="txt_box">
+                            <span class="tt1">오사카, 빛나는 밤</span>
+                            <span class="tt2">야경까지 100% 완벽하게 오사카 느끼기</span>
+                        </span>
+                    </a></li><!--여행팁5-->
+                    
+                    <li class="mb0"><a href="#">
+                        <span class="thumb">
+                            <img src="images/tip6.jpg">
+                            <span class="spot">8</span>
+                        </span>
+                        <span class="txt_box">
+                            <span class="tt1">오사카, 빛나는 밤</span>
+                            <span class="tt2">야경까지 100% 완벽하게 오사카 느끼기</span>
+                        </span>
+                    </a></li><!--여행팁6-->
+                </ul>
+                
+                <a href="#" class="more_btn">457개의 여행TIP 모두 보기</a>
+            </section><!--row3_어디로 갈까-->
+            
+            <section class="row4">
+                <h3>인기도시 TOP10</h3>
+                
+                <ul class="city cf">
+                    <li><a href="#">
+                        <img src="images/po_city_01.jpg">
+                        <span>런던</span>
+                    </a></li>
+                    
+                    <li><a href="#">
+                        <img src="images/po_city_02.jpg">
+                        <span>파리</span>
+                    </a></li>
+                    
+                    <li><a href="#">
+                        <img src="images/po_city_03.jpg">
+                        <span>싱가포르</span>
+                    </a></li>
+                    
+                    <li><a href="#">
+                        <img src="images/po_city_04.jpg">
+                        <span>이스탄불</span>
+                    </a></li>
+                    
+                    <li><a href="#">
+                        <img src="images/po_city_05.jpg">
+                        <span>베네치아</span>
+                    </a></li>
+                    
+                    <li><a href="#">
+                        <img src="images/po_city_06.jpg">
+                        <span>바르셀로나</span>
+                    </a></li>
+                    
+                    <li class="mm"><a href="#">
+                        <img src="images/po_city_07.jpg">
+                        <span>타이베이</span>
+                    </a></li>
+                    
+                    <li class="mb0"><a href="#">
+                        <img src="images/po_city_08.jpg">
+                        <span>홍콩</span>
+                    </a></li>
+                    
+                    <li class="mb0"><a href="#">
+                        <img src="images/po_city_09.jpg">
+                        <span>방콕</span>
+                    </a></li>
+                    
+                    <li class="mb0"><a href="#">
+                        <img src="images/po_city_10.jpg">
+                        <span>제주도</span>
+                    </a></li>
+                </ul>
+            </section><!--row4_인기도시top10-->
+            
+            <section class="row5">
+                <div class="inner cf">
+                    <div class="left"><img src="images/et_mobile_demo_ko.png" alt></div>
+                    
+                    <div class="right">
+                        <h3>모바일에서도 어스토리를 만나보세요.</h3>
+                        
+                        <p>내가 계획한 일정과 전세계 주요 관광지 정보를 빠르게 쉽게 찾을 수 있습니다.<br>
+                        어스토리의 모든 서비스는 무료입니다.</p>
+                        
+                        <div class="store">
+                            <a href="#"><img src="images/et_mobile_google.png" alt="구글플레이"></a>
+                            <a href="#"><img src="images/et_mobile_apple.png" alt="애플스토어"></a>
+                        </div>
+                    </div>
+                </div>
+            </section><!--row5_모바일어스토리-->
+        </div><!--컨텐츠영역-->
+        
+        <footer id="footer">
+               <div class="inner cf">
+                   <div class="menu">
+                       <p>어스토리</p>
+                       <ul>
+                           <li><a href="#">여행지</a></li>
+                           <li><a href="#">일정만들기</a></li>
+                           <li><a href="#">호텔</a></li>
+                           <li><a href="#">Q&amp;A</a></li>
+                           <li><a href="#">여행TIP</a></li>
+                           <li><a href="#">모바일</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="menu">
+                       <p>회사이야기</p>
+                       <ul>
+                           <li><a href="#">회사소개</a></li>
+                           <li><a href="#">이용방법</a></li>
+                           <li><a href="#">광고 및 제휴</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="menu">
+                       <p>고객센터</p>
+                       <ul>
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">문의하기</a></li>
+                           <li><a href="#">이용약관</a></li>
+                           <li><a href="#">개인정보처리방침</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="more">
+                       <div class="select cf">
+                           <select class="lang">
+                               <option selected>한국어</option>
+                               <option>日本語</option>
+                               <option>English</option>
+                           </select>
+                           <select class="unit">
+                               <option selected>KRW</option>
+                               <option>JPY</option>
+                               <option>USD</option>
+                           </select>
+                       </div>
+                       
+                       <div class="icon">
+                           <a href="#"><img src="images/ft_fb_icon.png"></a>
+                           <a href="#"><img src="images/ft_blog_icon.png"></a>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="bottom">
+                  <div class="inner cf">
+                       <p class="txt1">Copyright ⓒ 2015 Earthtory.com, All Rights Reserved.</p>
+                       <p class="txt2">제휴문의: wonwoo@earthtory.com | 02-6441-4100</p>
+                   </div>
+               </div>
+        </footer><!--푸터영역-->
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

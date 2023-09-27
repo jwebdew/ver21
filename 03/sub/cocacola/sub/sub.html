@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코카콜라 서브페이지</title>
+    <!-- 제이쿼리 -->
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <!-- 제이쿼리 ui -->
+    <script src="../lib/jquery-ui.min.js"></script>
+    <!-- aos -->
+    <link href="../lib/aos.css" rel="stylesheet">
+    <script src="../lib/aos.js"></script>
+    <!-- 폰트아이콘 -->
+    <link href="../lib/xeicon.min.css" rel="stylesheet"/>
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" href="../css/sub.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="top_wrap">
+                <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt="코카콜라 로고"/></a></h1>
+                <ul class="util">
+                    <li><a href="#"><i class="xi-search"><span>검색</span></i></a></li>
+                    <li><a href="#">Location<i class="xi-caret-down-min"><span>지역 더보기</span></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="pc_gnb">
+            <ul class="depth01">
+                <li>
+                    <a href="sub/sub.html">브랜드 소개</a>
+                    <ul class="depth02">
+                        <li><a href="sub/sub.html">회사 소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">대표이사 인사말</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품 소개</a>
+                    <ul class="depth02">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">코카콜라</a></li>
+                        <li><a href="#">패밀리 브랜드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">지사 소개</a>
+                    <ul class="depth02">
+                        <li><a href="#">국가별</a></li>
+                        <li><a href="#">지역별</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인재 채용</a>
+                    <ul class="depth02">
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">인사&middot;교육제도</a></li>
+                        <li><a href="#">복리후생</a></li>
+                        <li><a href="#">채용소식</a></li>
+                        <li><a href="#">오픈 이노베이션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="depth02">
+                        <li><a href="#">코크 스토리</a></li>
+                        <li><a href="#">코크 라이프</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <i class="xi-bars"><span>메뉴 열기</span></i>
+        <nav class="mobile">
+            
+        <i class="xi-close"><span>메뉴 닫기</span></i>
+            <div class="m_logo_wrap">
+                <a href="index.html"><img src="../img/logo.png" alt="로고 이미지" class="m_logo"/></a>
+            </div>
+            <ul class="m_depth01">
+                <li>
+                    <a href="#">브랜드 소개<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="sub/sub.html">회사 소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">대표이사 인사말</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품 소개<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">코카콜라</a></li>
+                        <li><a href="#">패밀리 브랜드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">지사 소개<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">국가별</a></li>
+                        <li><a href="#">지역별</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인재 채용<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">인사&middot;교육제도</a></li>
+                        <li><a href="#">복리후생</a></li>
+                        <li><a href="#">채용소식</a></li>
+                        <li><a href="#">오픈 이노베이션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">코크 스토리</a></li>
+                        <li><a href="#">코크 라이프</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header><!-- header E -->
+
+    <main>
+        <div class="intro" id="top">
+            <div class="main_img_wrap">
+                <img src="../img/sub_top_bg.png" alt="코카콜라 서브페이지 메인 이미지" class="main_img"/>
+                <img src="../img/sub_767.png" alt="코카콜라 서브페이지 메인 이미지" class="m_main_img">
+            </div>
+            <div class="intro_inner">
+                <div class="intro_left">
+                    <div class="title_wrap">
+                        <p class="sub_title">COCA COLA STORY</p>
+                        <h1 class="main_title" data-aos="fade-up" data-aos-duration="500">BRAND</h1>
+                    </div>
+                    <div class="text_wrap">
+                        <h2>&ldquo;Refresh the world. Make a difference.&rdquo;</h2>
+                        <p>
+                            코카-콜라 컴퍼니는 전 세계 200여 개국 이상에 진출해있는 글로벌 종합 음료회사로 탄산, 스포츠음료, 생수, 주스, 차, 커피 등 총 500여 개 이상의 브랜드, 4,700여 개 종류의 제품을 보유하고 있습니다.<br/>
+                            <br/>
+                            대표 브랜드로는 코카-콜라를 필두로 환타, 스프라이트, 파워에이드, 미닛메이드, 비타민워터, 조지아 커피, 골드피크 티, 어니스트 티, 지코 코코넛워터, 스마트워터, 다사니, 델발 주스, 심플리 주스, 아야타카 녹차, 아데스 등이 있습니다.<br/>
+                            <br/>
+                            소비자들이 자신의 취향에 따라 선택할 수 있도록 매년 다양한 신제품을 개발하고 있으며, 저칼로리와 제로칼로리 옵션도 늘려나가고 있습니다. 2019년 한 해만 약 1,000개 이상의 신제품을 출시했으며, 제로&middot;저칼로리 제품은 400개 이상에 달합니다.<br/>
+                            <br/>
+                            코카-콜라 컴퍼니는 사람들이 좋아하는 음료 브랜드를 만들어, 상쾌한 일상을 제공합니다. 지속가능한 비즈니스를 통해 사람들의 삶, 우리가 살아가는 지역사회, 나아가 지구 전체를 더 나은 방향으로 변화시키는데 일조하고 있습니다.
+                        </p>
+                    </div>
+                </div><!-- .intro_left E -->
+                <div class="intro_right">
+                    <div class="right_img_wrap" data-aos="fade-up" data-aos-duration="500">
+                        <img src="../img/sub_top_img.png" alt="컨투어 병을 들고 있는 빈티지 이미지"/>
+                    </div>
+                    <ul class="link_list">
+                        <li class="link"><a href="#cont01">01<span>코카콜라의 시작</span></a></li>
+                        <li class="link"><a href="#cont02">02<span>코카콜라 포트폴리오</span></a></li>
+                        <li class="link"><a href="#cont03">03<span>지속가능경영</span></a></li>
+                        <li class="link"><a href="#cont04">04<span>코카콜라 기업문화</span></a></li>
+                    </ul>
+                    <p class="aside">please click on the MENU!</p>
+                </div><!-- .intro_right E -->
+            </div><!-- .intro_inner E -->
+        </div><!-- .intro E -->
+
+        <div class="banner" id="cont01">
+            <img src="../img/sub_banner.png" alt="코카콜라 배너 이미지"/>
+        </div><!-- .banner -->
+
+        <section class="cont01">
+            <div class="cont_title_wrap">
+                <h3>since 1886</h3>
+                <p>코카콜라의 시작</p>
+            </div>
+            <article class="cont01_left" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/sub_cont01_img.png" alt="컨투어병 시대별 변화"/>
+            </article><!-- .cont01_left E -->
+            <article class="cont01_right" id="cont02">
+                해방 직후 주둔한 미군에게 공급되면서 국내에 처음 들어왔던 코카-콜라는 미군부대를 통해 시중에 흘러 들어오면서 대중들에게 점차 알려졌습니다. 그리고 1968년 첫 보틀링 파트너였던 한양식품에 의해 국내에서 정식으로 생산되기 시작했습니다.<br/>
+                <br/>
+                코카-콜라사는 1886년 탄생한 이래 130년이 넘도록 소비자에게 상쾌함과 즐거움을 제공하며, 글로벌 종합음료회사로 자리매김하고 있습니다. 코카-콜라, 코카-콜라 라이트, 환타, 스프라이트 등  세계 5대 탄산음료 중 4개 브랜드가 코카-콜라사 제품입니다. 미국 경제전문지 포브스가 선정한 ‘세계에서 가장 가치 있는 100대 브랜드’에도 꾸준히 이름을 올리고 있으며, 인터브랜드에서 2016년에 발표한 브랜드
+                가치는 731억 달러인 것으로 나타났습니다.  계속해서 코카-콜라 브랜드 가치를 높이고 유지할 수 있었던 것은 코카-콜라 특유의 맛뿐만 아니라 컨투어 병, 산타클로스, 북극곰 등과 같은 고유자산을 바탕으로 다양한 마케팅 활동을 펼치며 사람들에게 ‘즐겁고 짜릿한 경험’을 제공해왔기 때문입니다.<br/>
+                <br/>
+                한편, 코카-콜라사는 1928년 암스테르담 올림픽을 시작으로 올림픽 후원을 비롯해 월드컵 등 각종 스포츠 행사를 꾸준히 공식 후원하고 있습니다. 한국과 함께 한 올림픽은 1988 서울올림픽과 그 이후 30년 만에 열린 2018 평창동계올림픽이 있습니다.
+            </article><!-- .cont01_right E -->
+        </section><!-- .cont01 E -->
+
+        <section class="cont02">
+            <div class="cont_title_wrap">
+                <h3>portfolio</h3>
+                <p>코카콜라의 기록</p>
+            </div>
+            <article class="cont02_left" data-aos="fade-up" data-aos-duration="500">
+                <dl>
+                    <dt>No.1</dt>
+                    <dd>코카콜라를 포함한 다양한 종류의<br/>패밀리 브랜드가 전 세계에 알려져 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>1,000</dt>
+                    <dd>2019년 현재까지 1,000개 이상의<br/>신제품을 런칭했습니다.</dd>
+                </dl>
+            </article><!-- .cont02_left E -->
+            <article class="cont02_center">
+                <img src="../img/sub_cont02_img.png" alt="코카콜라 컨투어병 일러스트 이미지"/>
+            </article><!-- .cont02_center E -->
+            <article class="cont02_right" data-aos="fade-up" data-aos-duration="500">
+                <dl>
+                    <dt>4,700</dt>
+                    <dd>2019년 현재까지 4,700여개의<br/>제품을 생산하고 있습니다.</dd>
+                </dl>
+                <dl>
+                    <dt>200</dt>
+                    <dd id="cont03">200개국 이상의 나라에<br/>진출해 있습니다.</dd>
+                </dl>
+            </article><!-- .cont02_right E -->
+        </section><!-- .cont02 E -->
+
+        <section class="cont03">
+            <div class="cont_title_wrap cont03_title">
+                <h3>sustainable</h3>
+                <p>지속가능경영</p>
+            </div>
+            <p>
+                코카콜라는 더 나은 미래를 위해 지속가능경영을 꾸준히 실천하고 있습니다.<br/>
+                환경을 생각하고, 지역사회의 경제적 발전을 도우며, 지역사회 구성원들이 행복하고 활기차게 살아갈 수 있도록 지원합니다.<br/>
+                <br/>
+                지속가능한 패키지(World Without Waste), 깨끗한 물의 환원, 여성 리더십 등 다양한 분야에 걸쳐<br/>
+                전 세계 지역사회에 긍적적인 변화를 이끌어나가고 있습니다.
+            </p>
+            <div class="box_wrap">
+                <article class="box" data-aos="fade-up" data-aos-duration="500">
+                    <div class="box_img">
+                        <img src="../img/sub_cont03_img01.png" alt="이미지 설명"/>
+                    </div>
+                    <dl class="box_text">
+                        <dt>RECYCLING</dt>
+                        <dd>
+                            2025년까지 모든 음료 패키지를 재활용 가능한 것으로 교체<br/>
+                            2030년까지 모든 음료 패키지를 수거 및 재활용하고,<br/>
+                            50% 이상의 재활용 재료를 패키지에 활용
+                        </dd>
+                    </dl>
+                </article>
+                <article class="box" data-aos="fade-up" data-aos-duration="600">
+                    <div class="box_img">
+                        <img src="../img/sub_cont03_img02.png" alt="이미지 설명"/>
+                    </div>
+                    <dl class="box_text">
+                        <dt>WATER</dt>
+                        <dd>
+                            완제품에 사용된 물의 100% 이상 지역사회에 환원<br/>
+                            지금까지 1.5L의 깨끗한 물을 되돌려줌(2019년 기준)
+                        </dd>
+                    </dl>
+                </article>
+                <article class="box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="box_img">
+                        <img src="../img/sub_cont03_img03.png" alt="이미지 설명"/>
+                    </div>
+                    <dl class="box_text">
+                        <dt>COMMUNITY</dt>
+                        <dd id="cont04">
+                            1984년 코카-콜라 재단 설립 후, 10억달러 이상 기부<br/>
+                            460만 여성 기업인 육성<br/>
+                            2020년까지 500만 육성 목표
+                        </dd>
+                    </dl>
+                </article>
+            </div>
+        </section><!-- .cont03 E -->
+
+        <section class="cont04">
+            <div class="cont_title_wrap">
+                <h3>culture</h3>
+                <p>기업 문화</p>
+            </div>
+            <article class="cont04_left">
+                <img src="../img/sub_cont04_img.png" alt="이미지 설명"/>
+            </article><!-- .cont04_left E -->
+            <article class="cont04_right">
+                <p>
+                    130여 년 동안 코카-콜라 직원들은 창의성, 혁신, 협력, 지역사회에 대한 애정을 바탕으로 성장해왔습니다. 이러한 남다른 정신과 열정은 200여 개국 이상에 진출할 수 있는 원동력이 됐으며, 코카-콜라가 가치 있는 브랜드로 거듭날 수 있도록 만들었습니다.<br/>
+                    <br/>
+                    코카-콜라의 성장 전략의 핵심으로 다양성과 포용성도 빼놓을 수 없습니다. 코카-콜라는 블랙 엔터 프라이즈 매거진이 선정하는 ‘2016 다양성을 존중하는 50대 기업’에도 이름을 올릴 만큼 인종, 여성, 국가의 다양성을 존중하며 코카-콜라 안에서 누구나 자신이 가진 능력을 펼칠 수 있도록 합니다.<br/>
+                    <br/>
+                    2019년에는 휴먼 라이츠 캠페인 ‘기업 평등 지수’에서 13년 연속 만점을 받으며, 일하기 좋은 기업에 선정되었습니다. 이는 완전히 포용적이고 평등한 고용 기회와 혜택을 제공해야 받을 수 있는 점수입니다.
+                </p>
+            </article><!-- .cont04_right E -->
+        </section><!-- .cont04 E -->
+        
+        <a href="#top" class="go_top">
+            <img src="../img/fixed_btn.png" alt="위로 바로가기 버튼"/>
+        </a>
+    </main>
+
+    <footer>
+        <div class="f_wrap">
+            <div class="f_left">
+                <img src="../img/f_logo.png" alt="하단 로고"/>
+            </div>
+            <div class="f_right">
+                <ul class="f_menu">
+                    <li><a href="#">정도경영</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <div class="f_info">
+                    <span>코카-콜라음료(주) 대표이사 : 이정애</span>
+                    <span>주소 : 경상남도 양산시 충렬로 269 (유산동)</span>
+                    <span>사업자등록번호 : 102-81-411121</span>
+                    <span>고객상담실 : 080-024-5999</span>
+                </div>
+                <p class="copy">COPYRIGHT &copy; COCA-COLA BEVERAGE COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

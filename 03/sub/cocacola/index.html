@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코카콜라coca-cola</title>
+    <!-- 제이쿼리 -->
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <!-- 제이쿼리 ui -->
+    <script src="lib/jquery-ui.min.js"></script>
+    <!-- aos 스크롤 링크 -->
+    <link href="lib/aos.css" rel="stylesheet">
+    <script src="lib/aos.js"></script>
+    <!-- 폰트아이콘 -->
+    <link href="lib/xeicon.min.css" rel="stylesheet"/>
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="top_wrap">
+                <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="코카콜라 로고"/></a></h1>
+                <ul class="util">
+                    <li><a href="#"><i class="xi-search"><span>검색</span></i></a></li>
+                    <li><a href="#">Location<i class="xi-caret-down-min"><span>지역 더보기</span></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="pc_gnb">
+            <ul class="depth01">
+                <li>
+                    <a href="sub/sub.html">브랜드 소개</a>
+                    <ul class="depth02">
+                        <li><a href="sub/sub.html">회사 소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">대표이사 인사말</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품 소개</a>
+                    <ul class="depth02">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">코카콜라</a></li>
+                        <li><a href="#">패밀리 브랜드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">지사 소개</a>
+                    <ul class="depth02">
+                        <li><a href="#">국가별</a></li>
+                        <li><a href="#">지역별</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인재 채용</a>
+                    <ul class="depth02">
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">인사&middot;교육제도</a></li>
+                        <li><a href="#">복리후생</a></li>
+                        <li><a href="#">채용소식</a></li>
+                        <li><a href="#">오픈 이노베이션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="depth02">
+                        <li><a href="#">코크 스토리</a></li>
+                        <li><a href="#">코크 라이프</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <i class="xi-bars"><span>메뉴 열기</span></i>
+        <nav class="mobile">
+            
+        <i class="xi-close"><span>메뉴 닫기</span></i>
+            <div class="m_logo_wrap">
+                <a href="index.html"><img src="img/logo.png" alt="로고 이미지" class="m_logo"/></a>
+            </div>
+            <ul class="m_depth01">
+                <li>
+                    <a href="#">브랜드 소개<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="sub/sub.html">회사 소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">대표이사 인사말</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품 소개<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">코카콜라</a></li>
+                        <li><a href="#">패밀리 브랜드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">지사 소개<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">국가별</a></li>
+                        <li><a href="#">지역별</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인재 채용<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">인사&middot;교육제도</a></li>
+                        <li><a href="#">복리후생</a></li>
+                        <li><a href="#">채용소식</a></li>
+                        <li><a href="#">오픈 이노베이션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티<i class="xi-plus-min"></i><i class="xi-minus-min"></i></a>
+                    <ul class="m_depth02">
+                        <li><a href="#">코크 스토리</a></li>
+                        <li><a href="#">코크 라이프</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header><!-- header E -->
+
+    <main>
+        <div class="main_visual">
+            <div class="video_wrap">
+                <video class="video_bg" src="video/cus.mp4" autoplay muted loop></video>
+            </div>
+            <div class="text_wrap">
+                <h2>Coke Adds Life!</h2>
+                <p>코카콜라는 즐거움과 함께합니다</p>
+            </div>
+        </div><!-- .main_visual E -->
+
+        <section class="cont01">
+            <img src="img/bg_over.png" alt="호버시 나타나는 이미지" class="over"/>
+            <article class="cont01_left">
+                <h3 class="title" data-aos="fade-up" data-aos-duration="300">ABOUT OF</h3>
+                <p data-aos="fade-up" data-aos-duration="400">
+                    글로벌 종합 음료회사, 코카-콜라는 전 세계 200여 개국 이상에 진출해있으며, 500여 개 이상의 브랜드와 4,100여 가지 종류의 제품을 보유하고 있습니다. 그 가운데 21개 브랜드는 연간 매출 규모가 10억 달러(1조 1,400억 원)를 넘는 브랜드이며, 그 중 19개 브랜드는 소비자들이 취향에 따라 설탕 섭취량을 선택할 수 있도록 저칼로리 또는 제로칼로리 옵션을 제공하고 있습니다.<br/>
+                    <br/>
+                    대표 브랜드로는 세계적인 브랜드 가치와 인지도를 자랑하는 코카-콜라 브랜드를 필두로 환타, 스프라이트, 파워에이드, 미닛메이드, 글라소 비타민워터, 조지아, 슈웹스, 골드피크, 지코 등이 있습니다.
+                </p>
+                <a href="#" class="cont01_btn">View More<i class="xi-arrow-right"><span>더보기</span></i></a>
+            </article><!-- .cont01_left E -->
+            <article class="cont01_center">
+                <img src="img/cont01_cola_bottle.png" alt="콜라병 이미지"/>
+            </article>
+            <article class="cont01_right">
+                <ul class="about">
+                    <li><a href="#">about PASSION</a></li>
+                    <li><a href="#">about LANGUAGE</a></li>
+                    <li><a href="#">about HAPPY</a></li>
+                </ul>
+            </article><!-- .cont01_right E -->
+        </section><!-- .cont01 E -->
+
+        <section class="m_cont01">
+            <h3 class="m_title">ABOUT OF</h3>
+            <p class="m_text">
+                글로벌 종합 음료회사, 코카-콜라는 전 세계 200여 개국 이상에 진출해있으며, 500여 개 이상의 브랜드와 4,100여 가지 종류의 제품을 보유하고 있습니다.<br/>
+                <br/>
+                대표 브랜드로는 세계적인 브랜드 가치와 인지도를 자랑하는 코카-콜라 브랜드를 필두로 환타, 스프라이트, 파워에이드, 미닛메이드, 글라소 비타민워터, 조지아, 슈웹스, 골드피크, 지코 등이 있습니다. 
+            </p>
+            <article class="m_left">
+                <img src="img/m_cont01_img.png" alt="코카콜라 일러스트"/>
+            </article>
+            <article class="m_right">
+                <ul class="m_about">
+                    <li><a href="#">about PASSION</a></li>
+                    <li><a href="#">about LANGUAGE</a></li>
+                    <li><a href="#">about HAPPY</a></li>
+                </ul>
+            </article>
+            <a href="#" class="m_cont01_btn">View More<i class="xi-arrow-right"><span>더보기</span></i></a>
+        </section><!-- .m_cont01 E -->
+
+        <section class="cont02">
+            <div class="cont02_wrap">
+                <div class="cont02_top">
+                    <div class="title_wrap" data-aos="fade-up" data-aos-duration="300">
+                        <h3 class="title">LIFE OF COCA</h3>
+                        <p class="sub_title">전세계의 색다른 코카콜라를 만나보세요!</p>
+                        <a href="#" class="cont02_btn">View More<i class="xi-arrow-right"><span>더보기</span></i></a>
+                    </div>
+                    <article class="box box01" data-aos="fade-up" data-aos-duration="300">
+                        <a class="box_in" href="#">아이디어가 샘솟는<br/>전세계<br/><span>코카콜라 오피스</span></a>
+                    </article>
+                </div>
+                <div class="cont02_bottom" data-aos="fade-up" data-aos-duration="500">
+                    <article class="box box02">
+                        <a class="box_in" href="#"><span>WOW!</span><br/>코카콜라를 즐기는<br/>색다른 방법</a>
+                    </article>
+                    <article class="box box03">
+                        <a href="#"><img src="img/cont02_box03.png" alt=""/></a>
+                    </article>
+                    
+                    <article class="box box04">
+                        <a class="box_in" href="#">코크 팬들의<br/>성지로 떠나자!<br/><span>월드 오브 코카콜라</span></a>
+                    </article>
+                </div>
+            </div>
+        </section><!-- .cont02 E -->
+
+        <section class="m_cont02">
+            <h3>LIFE OF COCA</h3>
+            <p>전세계의 색다른 코카콜라를 만나보세요!</p>
+            <div class="m_cont02_box">
+                <article class="m_box bg_w">
+                    <a class="box_in" href="#">아이디어가 샘솟는<br/>전세계<br/><span>코카콜라 오피스</span></a>
+                </article>
+                <article class="m_box bg_w">
+                    <a class="box_in" href="#"><span>WOW!</span><br/>코카콜라를 즐기는<br/>색다른 방법</a>
+                </article>
+                <article class="m_box m_box_img">
+                    <a href="#"><img src="img/m_cont02_img.png" alt="" class="img"/></a>
+                </article>
+                <article class="m_box bg_w">
+                    <a class="box_in" href="#">코크 팬들의<br/>성지로 떠나자!<br/><span>월드 오브 코카콜라</span></a>
+                </article>
+            </div>
+            <a href="#" class="m_cont02_btn">View More<i class="xi-arrow-right"><span>더보기</span></i></a>
+        </section><!-- m_cont02 E -->
+
+        <section class="cont03">
+            <div class="bounce"></div>
+            <div class="cont03_wrap">
+                <h3 class="cont03_title" data-aos="fade-up" data-aos-duration="300">SNS OF COCA</h3>
+                <div class="aos">
+                    <div class="sns_list" data-aos="fade-up" data-aos-duration="500">
+                        <div class="list_top">
+                            <article class="cont03_box01">
+                                <a href="#"><img src="img/cont03_box01.png" alt="sns이미지"/></a>
+                            </article>
+                            <article class="cont03_box01">
+                                <a href="#"><img src="img/cont03_box02.png" alt="sns이미지"/></a>
+                            </article>
+                        </div>
+                        <div class="list_bottom">
+                            <article class="cont03_box01">
+                                <a href="#"><img src="img/cont03_box03.png" alt="sns이미지"/></a>
+                            </article>
+                            <article class="cont03_box01">
+                                <a href="#"><img src="img/cont03_box04.png" alt="sns이미지"/></a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="cont03_video_wrap"  data-aos="fade-up" data-aos-duration="500">
+                        <iframe src="https://www.youtube.com/embed/Bs6RFi4ZUAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <a href="#" class="cont03_btn">View More<i class="xi-arrow-right"><span>더보기</span></i></a>
+                <div class="happinees">
+                    <p class="bottom_text" data-aos="flip-up">open happiness</p>
+                    <img src="img/cont03_bottle.png" alt="코카콜라 병 일러스트"/>
+                </div>
+            </div>
+        </section><!-- .cont03 -->
+    </main>
+
+    <footer>
+        <div class="f_wrap">
+            <div class="f_left">
+                <img src="img/f_logo.png" alt="하단 로고"/>
+            </div>
+            <div class="f_right">
+                <ul class="f_menu">
+                    <li><a href="#">정도경영</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <div class="f_info">
+                    <span>코카-콜라음료(주) 대표이사 : 이정애</span>
+                    <span>주소 : 경상남도 양산시 충렬로 269 (유산동)</span>
+                    <span>사업자등록번호 : 102-81-411121</span>
+                    <span>고객상담실 : 080-024-5999</span>
+                </div>
+                <p class="copy">COPYRIGHT &copy; COCA-COLA BEVERAGE COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="go_top">
+        <img src="img/fixed_btn.png" alt="위로 바로가기 버튼"/>
+    </a>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

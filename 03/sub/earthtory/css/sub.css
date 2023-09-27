@@ -1,0 +1,74 @@
+@charset 'utf-8';
+
+/*서브상단배너*/
+.sub_top{
+    text-align:center;
+    width:100%;
+    overflow:hidden;
+    background:url(../images/sub/intro_bg.jpg) no-repeat center/cover;
+    user-select:none; /*이미지로 넣었지만 드래그를 차단할 때 사용*/
+}
+.sub_top img{}
+
+/* sub4(이용방법) > row1_어스토리 이용방법*/
+.sub4.row1{
+    text-align:center;
+    position:relative;
+}
+.sub4.row1 h3{
+    position:absolute;
+    top:auto;
+    left:-9999px;
+}
+.sub4.row1 img{}
+
+
+/* sub4(이용방법) > row2_어스토리 가입하기 */
+.sub4.row2{
+    width:100%;
+    background:#fff;
+    padding:0 0 38px;
+    border-top:1px solid #e2e2e2;
+}
+.sub4.row2 h3{
+    text-align:center;
+}
+.sub4.row2 h3 a img{}
+
+.sub4.row2 div{
+    text-align:center;
+}
+.sub4.row2 div a{}
+.sub4.row2 div a img{
+    margin:0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:12px;
+    line-height:1;
+    font-family: 'Nanum Barun Gothic', sans-serif;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+ol,ul{
+    list-style:none;
+}
+img{
+    border:none;/*구버전의 브라우저에서는 img태그에 링크를 걸어줄 경우 테두리가 생기기 때문에 미리 없애두는 것이 좋다*/
+    vertical-align:top;/*이미지태그는 인라인요소기 때문에 글자와 동급, 즉 하단여백이 생김. 그걸 위로 올려버려서 시각적으로 안 보이게 처리하는 값.*/
+}
+.cf{}
+.cf:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
