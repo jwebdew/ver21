@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+ 
+ 
+/* header */
+/* header {
+    height: 100px;
+}
+header div {
+    margin: 0 auto;
+    width: 1280px;
+}
+header div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header div h1 {
+    width: 80px;
+    height: 65px;
+    float: left;
+    margin: 20px 0;
+}
+header div h1 img {
+    width: 100%;
+    height: 100%;
+}
+header div nav {
+    float: right;
+}
+header div nav li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 7px;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+header .main {
+    width: 1060px;
+    height: 75px;
+    margin: 0 auto;
+}
+header .main li {
+    display: inline-block;
+    line-height: 75px;
+    margin: 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* main_visual */
+.main_visual {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+.main_visual img {
+    width: 100%;
+    margin-top: 75px;
+    display: block;
+    border-bottom: 2px solid #9d1c20;
+}
+.main_visual div {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -35%);
+}
+.main_visual div h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #dd4f39;
+    font-family: 'Roboto', sans-serif;
+}
+.main_visual div h3 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #dd4f39;
+    margin-top: -10px;
+    font-family: 'Roboto', sans-serif;
+}
+.main_visual div p {
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #ffb58a;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* cont01 */
+.cont01 {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+.cont01 .title h2 {
+    display: inline-block;
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-family: 'Roboto', sans-serif;
+}
+.cont01 .title h2:first-of-type {
+    color: #d91226;
+    margin-right: 10px;
+}
+.cont01 p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.cont01 article {
+    display: inline-block;
+    margin-top: 50px;
+    vertical-align: top;
+}
+.cont01 div article p {
+    height: 20px;
+    font-size: 15px;
+    vertical-align: middle;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.cont01 .fa-angle-left {
+    color: #aaa;
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 60%;
+}
+.cont01 .fa-angle-right {
+    color: #aaa;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 60%;
+}
+
+/* cont02 */
+.cont02 {
+    height: 700px;
+    width: 100%;
+    background: url('../img/hollys1.gif') 0 0 / cover no-repeat;
+}
+.cont02 div {
+    width: 1280px;
+    margin: 0 auto;
+}
+.cont02 dl dt {
+    font-size: 40px;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    color: #502e2c;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.cont02 dl dd:first-of-type {
+    margin-top: 40px;
+    font-size: 25px;
+    color: #502e2c;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.cont02 dl dd:nth-of-type(2) {
+    padding: 50px 0;
+    font-size: 20px;
+    color: #502e2c;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.cont02 dl a {
+    width:180px; height: 50px;
+    border: 1px solid #502e2c;
+    line-height: 50px;
+    text-align: center;
+    color: #502e2c;
+    transition: linear .5s;
+    font-size: 16px;
+}
+.cont02 dl a:hover:last-of-type {
+    background-color: #502e2c;
+    color: white;
+    border: 1px solid transparent;
+}
+
+/* cont03 */
+.cont03 {
+    background-color: #f1efed;
+    height: 400px;
+}
+.cont03 > div {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+.cont03 > div .title {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    font-family: 'Roboto', sans-serif;
+
+}
+.cont03 div .title span {
+    color: #d91226;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.cont03 div .title h2 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.cont03 div .title p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 5px;
+}
+.cont03 > div .box {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+.cont03 .box article {
+    display: inline-block;
+}
+.cont03 > div .new {
+    width:100px; height: 40px;
+    background-color: #d91226;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+.cont03 .fa-angle-right {
+    color: #aaa;
+    z-index: 9;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+/* cont04 */
+.cont04 {
+    background: url('../img/hollys2.gif')0 0 / cover no-repeat;
+    height: 600px;
+    position: relative;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.cont04 div {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+}
+.cont04 div h2 {
+    margin-top: 130px;
+    font-size: 35px;
+    color: #502e2c;
+}
+.cont04 div h3 {
+    margin-top: 30px;
+    font-size: 50px;
+    color: #2e2119;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.cont04 div h3 span {
+    color: #d91226;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.cont04 div p {
+    margin-top: 30px;
+    font-size:20px;
+    color: #502e2c;
+}
+.cont04 div .btn {
+    margin-left: -300px;
+    margin-top: 40px;
+}
+.cont04 div .btn::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont04 div .btn li {
+    display: inline-block;
+    width: 180px; height: 50px;
+    border: 1px solid #502e2c;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.cont04 div .btn a {
+    color: #502e2c;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.cont04 .btn li:first-child {
+    background-color: #502e2c;
+}
+.cont04 .btn .first a {
+    color: white;
+}
+
+/* footer */
+/* footer {
+    background-color: #d91226;
+    height: 160px;
+}
+footer div {
+    width: 628px;
+    margin: 0 auto;
+}
+footer div .top {
+    height: 59px;
+    line-height: 59px;
+    border-bottom: 1px solid white;
+}
+footer div .top li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 11px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+footer div .top li:last-child {
+    margin-right: 0;
+}
+footer div a {
+    color: white;
+}
+footer .bot {
+    text-align: center;
+    margin-top: 15px;
+}
+footer .bot li {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    margin: -2px;
+} */

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빈집 큐레이션 플랫폼, 유휴</title>
+
+    <link href="css/index.css" rel="stylesheet"/>
+
+    
+    <link href="lib/XEIcon-2.2.0/xeicon.min.css" rel="stylesheet"/>
+    <link href="js/fullPage.js-master/dist/fullpage.min.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <script src="js/fullPage.js-master/dist/fullpage.min.js"></script>
+    <script src="js/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var myFullpage = new fullpage('#fullpage', {
+                scrollOverflow:true,
+                css3: false,
+                anchors: ['firstPage', 'secondPage','3rdPage', '4rdpage', '5rdpage', '6rdpage'],
+                sectionsColor: ['#fff', '#fff', '#eee', '#fff', '#ddd', '#f4e5dd'],
+                navigation: true,
+                navigationPosition: 'left', //네비게이션 바 오른쪽
+                afterResponsive: function(isResponsive){
+                }
+            });
+            $('.close').click(function(){
+                $('.all_menu').css({
+                    'right' : '-100%'
+                });
+            });
+
+            $('.menu_icon').click(function(){
+                $('.all_menu').css({
+                   'right' : '-25px'
+                });
+            });
+
+            $('.tab_btn li').click(function(){
+                $('.tab_btn li').removeClass('on');
+                /* $('.tab_cont article').css({
+                    'display' : 'block'
+                }); */
+                $(this).addClass('on');
+
+                $('.cont03_right .tab_cont > li').removeClass('on');
+                $('.cont03_right .tab_cont > li').eq($(this).index()).addClass('on');
+            });
+            
+        });
+        </script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#"><img src="img/logo3.png"></a>
+        </h1>
+
+        <div class="menu_icon">
+            <i class="xi-bars"></i>
+        </div>
+
+        <div class="all_menu">
+
+            <div class="close">
+                <i class="xi-close"></i>
+            </div><!-- close end -->
+
+            <ul class="menu">
+                <li>
+                    <a href="#">유휴 하우스</a>
+                    <p>나에게 맞는 공간을 찾아보세요.</p>
+                </li>
+                <li>
+                    <a href="#">유휴 멤버십</a>
+                    <p>다양한 동네, 새로운 라이프 스타일을 살아보세요.</p>
+                </li>
+                <li>
+                    <a href="#">동네 이야기</a>
+                    <p>일상, 사람, 공간에 대한 이야기를 소개합니다.</p>
+                </li>
+                <li>
+                    <a href="#">빈집 정보</a>
+                    <p>이야기로 채워질 빈집들을 살펴보세요.</p>
+                </li>
+                <li>
+                    <a href="#">유휴 소개</a>
+                    <p>유휴의 사업에 대해 소개합니다.</p>
+                </li>
+                <li>
+                    <a href="#">문의하기</a>
+                    <p>궁굼한 점은 무엇이든 물어보세요.</p>
+                </li>
+            </ul>
+            
+            <div class="bot">
+                <ul class="contact">
+                    <li>
+                        <a href="#"><span>CONTACT</span></a>
+                    </li>
+                    <li><a href="#">help@blankin.net</a></li>
+                    <li><a href="#">070 7743 3270</a></li>
+                </ul>
+
+                <ul class="sns">
+                    <li>
+                        <a href="#"><span>SNS</span></a>
+                    </li>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+                </ul>
+            </div>
+        </div><!-- all_menu end -->
+
+        
+        
+        </div><!-- menu_icon end -->
+    </header>
+
+
+
+    <div id="fullpage">
+        <section class="main_visual section">
+            <!-- <img src="img/main_visual4.jpg"/> -->
+        </section><!-- main_visual -->
+        <div class="section " id="section0">
+            <div class="intro">
+                <div class="cont01">
+                    
+                    <div class="left">
+                        <dl>
+                            <dt><!-- <img src="img/logo3.png">  -->유휴 멤버십</dt>
+                            <dd>전국 다양한 동네의 유휴하우스를 돌아다니며</dd>
+                            <dd>자신만의 삶을 살 수 있는 주거 구독 서비스입니다.</dd>
+                            <dd>다양한 동네와 새로운 라이프 스타일 </dd>
+                            <dd>유휴 멤버십과 함께 하세요.</dd>
+                            <button><a href="#"> 멤버십 살펴보기</a></button>
+                        </dl>
+                    </div><!-- left end -->
+
+                    <div class="right">
+                        <a href="#">
+                            <img src="img/cont01_img.jpg">
+                            <p>
+                                <span>남해에서 만나는 리틀포레스트</span>
+                                <br/>
+                                유휴하우스 남해 1호점 구경가기 〉
+                            </p>
+                        </a>
+                    </div><!-- right end -->
+                </div><!-- cont01 end -->
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <div class="cont02">
+                        <h2>살고싶은 동네이야기</h2>
+                        <p>새로운 동네에서 더 나은 일상을 만드는 사람들의 이야기를 소개합니다.</p>
+                        <button>
+                            <a href="#">더보기
+                                <i class="xi-angle-right-thin"></i>
+                            </a>
+                        </button>
+                        
+                        <div class="cont02_in">
+                            <article>
+                                <p>공간</p>
+                                <img src="img/img1.jpg" alt=""/>
+                            </article>
+    
+                            <article>
+                                <img src="img/img2.jpg" alt=""/>
+                                <p>일상</p>
+                            </article>
+    
+                            <article>
+                                <p>사람</p>
+                                <img src="img/img03.jpg" alt=""/>
+                            </article>
+    
+                            <article>
+                                <img src="img/img4.jpg" alt=""/>
+                                <p>전체</p>
+                            </article>
+    
+    
+                        </div><!-- cont02_in end -->
+                    </div><!-- cont02 end -->
+                </div>
+            </div><!-- #slide1 end -->
+        </div>
+
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="cont03">
+                    <div class="cont03_left">
+                        <img src="img/wleh.png" alt=""/>
+                        <ul class="tab_btn">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul><!-- tab_btn end -->
+                    </div><!-- cont03_left end -->
+
+                    <div class="cont03_right">
+                        <h2>더 많은 유휴 공간 찾기</h2>
+                        <p>매력적인 빈집 정보와, 살고싶은 도시의 매물정보를 찾아보세요.</p>
+
+                        <ul class="tab_cont">
+                            <li class="on">
+                                <img src="img/wlq.png" alt=""/>
+                                <h3>다락방과 텃밭에서 바다를 내려다 보는 마당집</h3>
+                                <div class="house_info">
+                                    <p>거래<br/>
+                                        완료</p>
+                                    <ul>
+                                        <li><img src="img/pin.png" alt=""/>경상남도 남해군 미조면</li>
+                                        <li><img src="img/info.png" alt=""/>매매 1억 7천만원</li>
+                                    </ul>
+                                </div> <!-- house_info end -->
+                                <button>
+                                    <a href="#">더보기<i class="xi-angle-right-thin"></i></a>
+                                </button>
+                            </li>
+                            <li>
+                                <img src="img/wlq2.jpg" alt=""/>
+                                <h3>민박집의 고풍스러운 정취가 남아있는 옥색집</h3>
+                                <div class="house_info">
+                                    <p>거래<br/>
+                                        완료</p>
+                                    <ul>
+                                        <li><img src="img/pin.png" alt=""/>경상남도 남해군 상주면</li>
+                                        <li><img src="img/info.png" alt=""/>매매 1억 5천만원</li>
+                                    </ul>
+                                </div> <!-- house_info end -->
+                                <button>
+                                    <a href="#">더보기<i class="xi-angle-right-thin"></i></a>
+                                </button>
+                            </li>
+                            <li>
+                                <img src="img/3.jpg" alt=""/>
+                                <h3>어린시절 포근한 할머니댁이 생각나는 사철나무집</h3>
+                                <div class="house_info">
+                                    <p>거래<br/>
+                                        완료</p>
+                                    <ul>
+                                        <li><img src="img/pin.png" alt=""/>경상남도 남해군 이동면</li>
+                                        <li><img src="img/info.png" alt=""/>매매 1억 7천만원</li>
+                                    </ul>
+                                </div> <!-- house_info end -->
+                                <button>
+                                    <a href="#">더보기<i class="xi-angle-right-thin"></i></a>
+                                </button>
+                            </li>
+                            <li>
+                                <img src="img/wlq4.jpg" alt=""/>
+                                <h3>다랭이마을이 한눈에 내려다 보이는 목공집</h3>
+                                <div class="house_info">
+                                    <p>거래<br/>
+                                        완료</p>
+                                    <ul>
+                                        <li><img src="img/pin.png" alt=""/>경상남도 남해군 남면</li>
+                                        <li><img src="img/info.png" alt=""/>매매 1억 7천만원</li>
+                                    </ul>
+                                </div> <!-- house_info end -->
+                                <button>
+                                    <a href="#">더보기<i class="xi-angle-right-thin"></i></a>
+                                </button>
+                            </li>
+                            <li>
+                                <img src="img/wlq5.jpg" alt=""/>
+                                <h3>마당도 방도 넉넉한 인심좋은 파랑지붕집</h3>
+                                <div class="house_info">
+                                    <p>거래<br/>
+                                        완료</p>
+                                    <ul>
+                                        <li><img src="img/pin.png" alt=""/>경상남도 남해군 상주면</li>
+                                        <li><img src="img/info.png" alt=""/>매매 1억 7천만원</li>
+                                    </ul>
+                                </div> <!-- house_info end -->
+                                <button>
+                                    <a href="#">더보기<i class="xi-angle-right-thin"></i></a>
+                                </button>
+                            </li>
+                        </ul><!-- tab_cont end -->
+                    </div><!-- cont03_right end -->
+                </div><!-- cont03 end -->
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            
+            <div class="cont04">
+                <div class="cont04_in">
+                    <div class="cont04_left">
+                        <h2>유휴 공간 문의하기</h2>
+                        <p>빈집 정보, 빈집 제보 등 궁금하신 내용을 보내주세요.</p>
+                        <div class="name">
+                            <input type="text" id="name" placeholder="이름 *">
+                        </div> 
+                        <div  class="email">
+                            <input type="text" placeholder="이메일 *">
+                        </div>
+                        <div  class="txt">
+                            <input type="text" placeholder="내용을 입력해주세요.">
+                        </div>
+                        <div class="box">
+                            <input type="checkbox">
+                            <span><i>개인정보 보호 처리방침</i>에 동의합니다.</span>
+                        </div>
+                        <button><a href="#">문의하기
+                            <i class="xi-angle-right-thin"></i>
+                        </a></button>
+                    </div><!-- cont04_left end -->
+
+                    <div class="cont04_right">
+                        <div class="txt_in">
+                            <p>
+                                새로 등록된 빈집 유휴가 발견한<br/>
+                                살만한 동네 이야기를 받아보세요.
+                            </p>
+                            <div class="mail">
+                                <input type="text" placeholder="이메일을 입력해주세요.">
+                            </div>
+                            <button><a href="#">
+                                뉴스레터 구독하기
+                                <i class="xi-angle-right-thin"></i>
+                            </a></button>
+                        </div><!-- txt-in end -->
+
+                    </div><!-- cont04_right end -->
+
+                    <div class="bot_txt">
+                        <h2>
+                            살고싶은 동네에서 시작하는 새로운 일상<br/>
+                            빈집 큐레이션 플랫폼 <img src="img/logo3.png" alt=""/>
+                        </h2>
+                        <ul>
+                            <li><a href="#">유휴하우스</a></li>
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">동네 이야기</a></li>
+                            <li><a href="#">빈집 정보</a></li>
+                            <li><a href="#">유휴 소개</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </div><!-- bot_txt end -->
+
+                    <div class="info">
+                        <ul class="info_in">
+                            <li>(주) 블랭크건축사사무소 | (주) 블랭크</li>
+                            <li>서울특별시 동작구 성대로 80, 3층</li>
+                            <li>전화번호 | 070 7743 3270</li>
+                            <li>이메일 | help@blankin.net</li>
+                        </ul>
+                        <ul class="bot_sns">
+                            <li><a href="#"><i class="xi-instagram"></i></a></li>
+                            <li><a href="#"><i class="xi-facebook"></i></a></li>
+                        </ul><!-- bot_sns -->
+                    </div><!-- info end -->
+
+                </div><!-- cont04_in end -->
+                
+            </div><!-- cont04 end -->
+        </div>
+
+        <div class="section fp-auto-height" id="section4">
+            <div class="intro">
+                <footer>
+                    <p>© BLANK Corp. All Rights Reserved.</p>
+                    <ul>
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+
+                    <select>
+                        <option>패밀리사이트</option>
+                        <option><a href="#">블랭크</a></option>
+                    </select>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,1014 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* header */
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+header div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header div h1 {
+    float: left;
+    margin-left: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header div h1 img {
+    width: 320px;
+    display: block;
+}
+header div nav {
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+}
+header nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
+nav > ul > li .depth02 li {
+    line-height: 30px;
+}
+nav > ul > li .depth02 li:first-of-type {
+    margin-top: 20px;
+}
+nav > ul > li .depth02 li:last-of-type {
+    margin-bottom: 20px;
+}
+nav > ul > li > a {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header div nav li:nth-of-type(5) {
+    margin-right: 220px;
+}
+.depth01 {
+    width: 120px;
+    margin-top: 25px;
+}
+.depth01:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+.depth01:hover > a {
+    color: #0065ea;
+    width: 120px;
+    border-bottom: 1px solid #eee;
+}
+.depth01 > a {
+    height: 50px; width: 130px;
+    line-height: 50px;
+}
+.depth02 {
+    opacity: 0;
+}
+.depth02 li a {
+    color: #aaa;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.depth01:hover .depth02 {
+    opacity: 1;
+}
+
+header .side_bar div {
+    position: absolute;
+    top: 3%;
+    right: 60px;
+    width: 140px; height: 140px;
+    background: url('../img/img_qckBck.png') 0 0 / cover no-repeat;
+    position: fixed;
+}
+header .side_bar img {
+    width: 110px;
+    margin: 0 15px;
+    margin-top: 45px;
+    display: block;
+}
+header .side_bar p {
+    text-align: center;
+    margin-top: -35px;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    height: 85px;
+    letter-spacing: -1px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header .side_bar p:nth-of-type(2) {
+    margin-top: -65px;
+    height: 70px;
+    font-size: 13px;
+}
+header .side_bar button {
+    background-color: #00264d;
+    color: white;
+    height: 55px; width: 100%;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header .side_bar .btn01 a {
+    width: 140px; height: 55px;
+    background-color: #00264d;
+    position: absolute;
+    top: 200px;
+    color: white;
+    line-height: 55px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+}
+
+/* main_visual */
+.main_visual {
+    background: url('../img/img_idxSldBck03.png')0 0 / cover no-repeat;
+    height: 860px;
+    position: relative;
+}
+.main_visual div {
+    width: 1280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.main_visual div h2 {
+    font-size: 45px;
+    font-weight: lighter;
+    letter-spacing: -3px;
+    margin-bottom: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div span {
+    font-weight: 700;
+    margin-left: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div p {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 95px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div .btn {
+    margin: 0;
+    width: 144px; height: 35px;
+    border: 2px solid white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+}
+.main_visual div .btn a {
+    color: white;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div .btn:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+.main_visual img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+}
+
+/* banner */
+.banner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.banner::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.banner div {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    box-sizing: border-box;
+}
+.banner ul {
+    display: inline-block;
+    text-align: left;
+    width: 605px; height: 100%;
+    border-left: 1px solid #eee;
+    position: relative;
+}
+.banner div ul li a {
+    margin-left: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #646dfa;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+.banner div ul li span {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-left: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -1px;
+}
+.banner div ul li i {
+    font-size: 16px;
+    color: #bbb;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 20px;
+    font-style: normal;
+    position: absolute;
+    top: -1px;
+    right: 20px;
+}
+.banner .icon {
+    float: right;
+}
+.banner .icon a {
+    width: 60px; height: 50px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    line-height: 50px;
+    text-align: center;
+}
+.banner .icon a:first-child {
+    border-bottom: 1px solid #eee;
+}
+
+/* cont01 */
+.cont01 {
+    background: url('../img/img_trxIdx02_0.png') 0 0 / cover no-repeat;
+    height: 437px;
+}
+.cont01 div {
+    padding: 120px 0;
+    text-align: center;
+}
+.cont01 div h2 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.cont01 div p {
+    font-size: 45px;
+    color: white;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -2px;
+}
+.cont01 div p:nth-of-type(2) {
+    margin-top: -10px;
+}
+.cont01 div p span {
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* cont02 */
+.cont02 {
+    background-color: #16b5de;
+    height: 780px;
+    position: relative;
+}
+.cont02 div {
+    max-width: 1280px;
+    position: absolute;
+    top: 16%; left: 56%;
+}
+.cont02 div h2 {
+    color: white;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 27px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    width: 460px;
+    position: relative;
+}
+.cont02 div h2::before {
+    content: '';
+    position: absolute;
+    width: 9px; height: 9px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    top: 96%; left: 0%;
+}
+.cont02 div h2::after {
+    content: '';
+    position: absolute;
+    width: 9px; height: 9px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    top: 96%; left: 100%;
+}
+.cont02 div h2 span {
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: -8px;
+    font-size: 28px;
+}
+.cont02 div p {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont02 div p:first-of-type {
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+.cont02 div p:nth-of-type(3) {
+    margin: 0;
+}
+.cont02 div p:nth-of-type(4) {
+    margin: 0;
+}
+.cont02 div p:nth-of-type(5) {
+    margin: 0;
+}
+.cont02 img {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    display: block;
+}
+.cont02 div .btn02 {
+    margin-top: 85px;
+    width: 144px; height: 35px;
+    border: 2px solid white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+}
+.cont02 div .btn02 a {
+    color: white;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont02 div .btn02:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+
+/* cont03 */
+.cont03 {
+    background-color: #0065ea;
+    height: 755px;
+    position: relative;
+}
+.cont03 div {
+    max-width: 1280px;
+    position: absolute;
+    top: 23%; right: 56%;
+}
+.cont03 div h2 {
+    color: white;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 27px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    position: relative;
+    letter-spacing: -1px;
+    width: 510px;
+}
+.cont03 div h2::before {
+    content: '';
+    position: absolute;
+    width: 9px; height: 9px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    top: 96%; left: 0%;
+}
+.cont03 div h2::after {
+    content: '';
+    position: absolute;
+    width: 9px; height: 9px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    top: 96%; left: 100%;
+}
+.cont03 div h2 span {
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;
+}
+.cont03 div h2 span:nth-of-type(2) {
+    margin-left: 5px;
+}
+.cont03 div p {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont03 div p:first-of-type {
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+.cont03 div p:nth-of-type(3) {
+    margin: 0;
+}
+.cont03 div p:nth-of-type(4) {
+    margin: 0;
+}
+.cont03 div p:nth-of-type(5) {
+    margin: 0;
+}
+.cont03 img {
+    position: absolute;
+    top: 18%;
+    right: 16%;
+    display: block;
+}
+.cont03 div .btn03 {
+    margin-top: 85px;
+    width: 144px; height: 35px;
+    border: 2px solid white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+}
+.cont03 div .btn03 a {
+    color: white;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont03 div .btn03:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+
+/* cont04 */
+.cont04 {
+    padding: 135px 0;
+}
+.cont04 h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+    color: #4e4e4e;
+}
+.cont04 p {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #4e4e4e;
+    letter-spacing: -1px;
+    margin-bottom: 60px;
+}
+.cont04 p span {
+    font-size: 45px;
+    color: #5c6af1;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont04 ul {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.cont04 ul li {
+    display: inline-block;
+    padding: 0 25px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+}
+.cont04 ul li a {
+    color: #aaa;
+}
+.cont04 ul li:first-child a {
+    border-bottom: 4px solid #5c6af1;
+    width: 60px; 
+    border-radius: 2px;
+    color: #5c6af1;
+}
+.cont04 div {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.cont04 div dl {
+    position: absolute;
+    top: 93%;
+    left: 90px;
+}
+.cont04 div dl dt {
+    font-size: 26px;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 60px;
+}
+.cont04 div dl dt span {
+    color: #5c6af1;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;
+}
+.cont04 div dl dd {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 135px;
+}
+.cont04 div dl dd:first-of-type {
+    color: #5c6af1;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* cont05 */
+.cont05 {
+    background-color: #f7f7f7;
+    padding: 140px 0;
+    margin-top: 170px;
+    position: relative;
+    height: 700px;
+}
+.cont05 div {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cont05 h3, h4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #444;
+}
+.cont05 h3 {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.cont05 h4 {
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+.cont05 h4 span {
+    font-weight: 400;
+}
+.cont05 .btn04 {
+    width: 170px; height: 35px;
+    border: 2px solid #5c6af1;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+    float: right;
+    margin-top: -50px;
+}
+.cont05 div .btn04 a {
+    color: #5c6af1;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont05 div .btn04:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+.cont05 div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont05 article {
+    margin-top: 40px;
+    float: left;
+    width: 413px; height: 530px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+.cont05 article dl {
+    padding: 20px 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+}
+.cont05 article dl dt {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1dbadd;
+    margin-bottom: 10px;
+}
+.cont05 article dl dd:first-of-type {
+    font-weight: 700;
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 20px;
+}
+.cont05 article dl dd:nth-of-type(2) {
+    font-weight: 300;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #444;
+    margin-bottom: 5px;
+}
+.cont05 article dl a {
+    text-align: right;
+    font-size: 30px;
+    margin-right: -15px;
+    color: #ddd;
+}
+.cont05 article:nth-of-type(3) {
+    margin-right: 0;
+}
+.cont05 article img {
+    width: 100%; height: 311px;
+    display: block;
+}
+.cont05 article:hover {
+    box-shadow: 5px 5px 20px 5px rgb(0 0 0 / 20%);
+    transform: translateY(-15px);
+}
+.cont05 article:hover a {
+    color: #5c6af1;
+}
+.cont05 .icon02 a {
+    width: 60px; height: 60px;
+    background-color: white;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ddd;
+    position: absolute;
+    top: 55%; left: 11.5%;
+    transition: .5s;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 20%);
+}
+.cont05 .icon03 a {
+    width: 60px; height: 60px;
+    background-color: white;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ddd;
+    position: absolute;
+    top: 55%; right: 11.5%;
+    transition: .5s;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 20%);
+}
+.cont05 .icon02:hover a {
+    color: #5c6af1;
+}
+.cont05 .icon03:hover a {
+    color: #5c6af1;
+}
+
+/* cont06 */
+.cont06 {
+    height: 300px;
+    background-color: #646dfa;
+    text-align: center;
+}
+.cont06 div {
+    padding-top: 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cont06 div p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+.cont06 div span {
+    color: #4cffee;
+    font-weight: 700;
+}
+.cont06 div .btn05 {
+    width: 160px; height: 35px;
+    border: 2px solid white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.cont06 div .btn05 a {
+    color: white;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont06 div .btn05:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+
+/* cont07 */
+.cont07 {
+    padding: 140px 0;
+}
+.cont07 div {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cont07 div h3, h4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #444;
+}
+.cont07 h3 {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.cont07 h4 {
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+.cont07 div span {
+    font-weight: 700;
+    color: #6166f6;
+}
+.cont07 .btn06 {
+    width: 170px; height: 35px;
+    border: 2px solid #5c6af1;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+    float: right;
+    margin-top: -50px;
+}
+.cont07 div .btn06 a {
+    color: #5c6af1;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cont07 div .btn06:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+.cont07 div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont07 article {
+    margin-top: 60px;
+    width: 305px; height: 510px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+.cont07 article:nth-of-type(4) {
+    margin-right: 0;
+}
+.cont07 article dl {
+    padding: 30px 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+.cont07 article dl dt {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1dbadd;
+    margin-bottom: 30px;
+}
+.cont07 article dl dd:first-of-type {
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cont07 article dl dd:nth-of-type(2):not(article:first-of-type) {
+    color: #aaa;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 10px;
+}
+.cont07 article dl a {
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ddd;
+    float: right;
+}
+.cont07 article:first-of-type a {
+    font-size: 30px;
+    color: #ddd;
+    position: absolute;
+    right: 25px;
+    bottom: -54px;
+}
+.cont07 article img {
+    width: 100%; height: 227px;
+    display: block;
+}
+.cont07 article:hover {
+    transform: translateY(-15px);
+    box-shadow: 5px 5px 20px 5px rgb(0 0 0 / 20%);
+}
+.cont07 article:hover a {
+    color: #5c6af1;
+}
+
+/* footer */
+footer {
+    background-color: #f6f5fa;
+    padding: 70px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer div {
+    width: 1280px;
+    margin: 0 auto;
+    height: 150px;
+    position: relative;
+}
+footer .left {
+    font-size: 14px;
+    height: 150px;
+}
+footer .left .depth03 {
+    width: 60px; 
+    margin-right: 20px;
+    color: #444;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+footer .left .depth04 {
+    margin-top: 20px;
+    line-height: 25px;
+}
+footer .left .depth04 a {
+    color: #aaa;
+}
+footer div p {
+    position: absolute;
+    top: 0;
+    left: 32%;
+    padding: 0 100px;
+    margin: 0 100px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 150px;
+    letter-spacing: -1px;
+}
+footer  .left p {
+    color: #888;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+}
+footer .left p a {
+    color: #888;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    display: inline-block;
+}
+footer .left p i {
+    font-style: normal;
+    margin: 0 10px;
+    color: #ddd;
+}
+footer div span {
+    width: 140px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+footer div span img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.left > ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* bottom */
+.bottom {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    height: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.bottom p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 300;
+}
+.bottom ul {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+.bottom ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.bottom ul li:nth-child(2) {
+    margin: 0;
+}
+.bottom ul li a {
+    font-size: 14px;
+    font-weight: 700;
+}
+.bottom select {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 158px; height: 38px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    color: #aaa;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.bottom select:hover {
+    box-shadow: 1px 1px 5px 0px #10b7e4;
+}
+.bottom select:focus {
+    outline: 1px solid #10b7e4;
+    border: 1px solid transparent;
+}

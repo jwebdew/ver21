@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portpolio</title>
+
+    <link href="css/index.css" rel="stylesheet"/>
+
+    <link href="lib/XEIcon-2.2.0/xeicon.min.css" rel="stylesheet"/>
+    <link href="js/fullPage.js-master/dist/fullpage.min.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="js/fullPage.js-master/dist/fullpage.min.js"></script>
+    <script src="js/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var myFullpage = new fullpage('#fullpage', {
+                scrollOverflow:true,
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4rdpage', '5rdpage', '6rdpage'],
+                /* navigation: true,
+                navigationPosition: 'right',  */
+                afterResponsive: function(isResponsive){
+                }
+            });
+
+            //hollys
+            $('.btn1').click(function(){
+                $('.hollys_page').css({
+                   'display' : 'block'
+                });
+                $('body').on('scroll touchmove mousewheel', function(event){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                });
+            });
+
+            $('.xi-close').click(function(){
+                $('.hollys_page').css({
+                    'display' : 'none'
+                });
+                $('body').off('scroll touchmove mousewheel');
+            });
+
+
+            //cledor
+            $('.btn2').click(function(){
+                $('.cledor_page').css({
+                    'display' : 'block' 
+                });
+                $('body').on('scroll touchmove mousewheel', function(event){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                });
+            });
+
+            $('.xi-close').click(function(){
+                $('.cledor_page').css({
+                    'display' : 'none'
+                });
+                $('body').off('scroll touchmove mousewheel');
+            });
+
+            //yoo
+            $('.btn3').click(function(){
+                $('.yoo_page').css({
+                    'display' : 'block' 
+                });
+                $('body').on('scroll touchmove mousewheel', function(event){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                });
+            });
+
+            $('.xi-close').click(function(){
+                $('.yoo_page').css({
+                    'display' : 'none'
+                });
+                $('body').off('scroll touchmove mousewheel');
+            });
+
+            //non
+            $('.btn4').click(function(){
+                $('.non_page').css({
+                    'display' : 'block' 
+                });
+                $('body').on('scroll touchmove mousewheel', function(event){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                });
+            });
+
+            $('.xi-close').click(function(){
+                $('.non_page').css({
+                    'display' : 'none'
+                });
+                $('body').off('scroll touchmove mousewheel');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="fullpage">
+
+        <div class="first section">
+            <header>
+                <img src="img/bg2.jpg" alt="">
+                <div class="title">
+                    <h1>PORT POLIO</h1>
+                    
+                    <div class="img">
+                        <img src="img/smile.png" alt="">
+                    </div><!-- img end -->
+                </div><!-- title end -->
+                
+                <div class="ani"></div>
+                <div class="ani2"></div>
+                <div class="ani3"></div>
+                <div class="ani4"></div>
+                <div class="ani5"></div>
+                <div class="ani6"></div>
+                <div class="ani7"></div>
+        
+                <div class="ani8"></div>
+                <div class="ani9"></div>
+                <div class="ani10"></div>
+                <div class="ani11"></div>
+                <div class="ani12"></div>
+        
+                <div class="name">
+                    <h2>HYUN NAN HWA</h2>
+                </div><!-- name end -->
+        
+                <div class="info">
+                    <ul>
+                        <li>010.5713.2079</li>
+                        <li>web_sg2079@naver.com</li>
+                    </ul><!-- left end -->
+        
+                    <ul>
+                        <li>2022 ver</li>
+                        <li>WEB PUBLISHER</li>
+                    </ul>
+                </div> <!-- info end -->
+            </header>
+        </div><!-- first section end -->
+        <div class="about section " id="section0">
+            
+            <div class="about_in">
+                <div class="about_left">
+                    <div>
+                        <h1>
+                            HYUN <br/>
+                            NAN HWA
+                        </h1>
+                    </div>
+                    
+                    <div class="character">
+                        <ul>
+                            <li><span>CHARACTER</span></li>
+                            <li>끈기</li>
+                            <li>책임감</li>
+                            <li>긍정적</li>
+                        </ul>
+                    </div><!-- character end -->
+                </div> <!-- about_left end -->
+                
+                
+                <div class="about_right">
+                    <div class="about_box">
+                        <div>
+                            <img src="img/다운로드.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <ul class="profile"> 
+                                <li><span>PROFILE</span></li>
+                                <li>현난화</li>
+                                <li>부산광역시 동래구</li>
+                                <li>010.5713.2079</li>
+                                <li>web_sg2079@naver.com</li>
+                            </ul><!-- profile end -->
+
+                            <ul class="edu">
+                                <li><span>EDUCATION</span></li>
+                                <li>2021.12 그린컴퓨터아카데미 웹퍼블리셔 과정 수료</li>
+                                <li>2016.02 부산정보관광고등학교 졸업</li>
+                                <!-- <li><button>이력서 PDF 다운로드</button></li> -->
+                            </ul><!-- edu end -->
+                            
+                        </div>
+                        
+                    </div><!-- about_box end -->
+
+                    <div>
+                        <h3>SKILLS</h3>
+                        <ul class="skills">
+                            <li>
+                                <img src="img/html.png" alt="">
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <img src="img/css.png" alt="">
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <img src="img/js.png" alt="">
+                                <p>Js</p>
+                            </li>
+                            <li>
+                                <img src="img/ps.png" alt="">
+                                <p>Ps</p>
+                            </li>
+                            <li>
+                                <img src="img/ai.png" alt="">
+                                <p>Ai</p>
+                            </li>
+                            <li>
+                                <img src="img/xd.png" alt="">
+                                <p>XD</p>
+                            </li>
+                            <li>
+                                <img src="img/word.png" alt="">
+                                <p>Word</p>
+                            </li>
+                            <li>
+                                <img src="img/ppt.png" alt="">
+                                <p>PPT</p>
+                            </li>
+                        </ul>
+                    </div><!-- skills end -->
+                </div><!-- about_right -->
+            </div><!-- about_in end -->
+           
+        </div><!-- about end -->
+
+        <div class="section" id="section1">
+            <div class="chapter">
+
+                <div class="chapter_title">
+                    <h1>CHAPTER</h1>
+                    
+                    <div class="ani13"></div>
+                    <div class="ani14"></div>
+
+                    <div class="ani15"></div>
+                    <div class="ani16"></div>
+                    <div class="ani17"></div>
+                    <div class="ani18"></div>
+                    <div class="ani19"></div>
+
+                    <div class="ani20"></div>
+                    <div class="ani21"></div>
+                    <div class="ani22"></div>
+                    <div class="ani23"></div>
+                    <div class="ani24"></div>
+                </div><!-- chapter_title end -->
+
+                <div class="chapter_in">
+
+                    <ul class="web">
+                        <li><span>WEBSITE RENEWAL</span></li>
+                        <li>할리스 커피</li>
+                        <li>끌레도르</li>
+                        <li>빈집 큐레이션 플랫폼, 유휴</li>
+                        <li>코비젼 위하랑</li>
+                    </ul><!-- web end -->
+
+                    <ul class="app">
+                        <li><span>APP DESIGN</span></li>
+                        <li>논픽션</li>
+                    </ul><!-- app end -->
+
+                    <ul class="graphic">
+                        <li><span>GRAPHIC DESIGN</span></li>
+                    </ul><!-- graphic end -->
+                </div><!-- chapter_in end -->
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="hollys">
+                <div class="animation_hollys">
+                    <img src="img/hollys.png" alt="">
+                </div>
+
+                <div class="hollys_right">
+                    <div class="hollys_title">
+                        <h3>할리스 커피</h3>
+                        <p>기본형 페이지</p>
+                    </div><!-- hollys_title end -->
+
+                    <div class="program">
+                        <ul>
+                            <li><span>참여도</span></li>
+                            <li>기획/디자인/코딩 100%</li>
+                        </ul>
+
+                        <ul>
+                            <li><span>프로그램</span></li>
+                            <li>Photoshop</li>
+                            <li>XD</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div><!-- program end -->
+
+                    <div class="hollys_p">
+                        <p>할리스 레드를 사용해 포인트를 주었고,<br/>
+                            멤버십과 MD상품을 메인페이지에 배치하여<br/>
+                            중요한 정보를 확인할 수 있도록 디자인 하였습니다.</p>
+                        
+                        <button class="btn1">상세페이지</button>
+                        <button onclick="window.open('http://hymu.dothome.co.kr/hollys/index.html') ">홈페이지</button>
+                            
+                        <div class="hollys_page" id="h_page">
+                            <img src="img/hollys_page.jpg" alt="">
+                            <i class="xi-close"></i>
+                        </div><!-- hollys_page end -->
+                    </div><!-- hollys_p end -->
+                </div> <!-- hollys_right end -->
+            </div><!-- hollys end -->
+        </div>
+
+        <div class="section" id="section3">
+            
+            <div class="cledor">
+
+                <div class="cledor_left">
+                    <div class="cledor_title">
+                        <h3>끌레도르</h3>
+                        <p>반응형 페이지</p>
+                    </div><!-- hollys_title end -->
+
+                    <div class="program">
+                        <ul>
+                            <li><span>참여도</span></li>
+                            <li>기획/디자인/코딩 100%</li>
+                        </ul>
+
+                        <ul>
+                            <li><span>프로그램</span></li>
+                            <li>Photoshop</li>
+                            <li>XD</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div><!-- program end -->
+
+                    <div class="cledor_p">
+                        <p>
+                            끌레도르만의 부드럽고 세련되며, 고급스러운 느낌을<br/>
+                            살려주었습니다. 또한, 필요한 내용만을 담아 보기 좋고<br/>
+                            편리하게 사용할 수 있도록 리뉴얼 하였습니다.<br/>
+                            반응형으로 제작하였으며,
+                            뷰포트 414PX 까지 적용하였습니다.  <br/>
+                        </p>
+                        
+                        <button class="btn2">
+                            상세페이지
+                        </button>
+                        <button onclick="window.open('http://hymu.dothome.co.kr/cledor/index.html') ">홈페이지</button>
+
+                        <div class="cledor_page" id="c_page">
+                            <img src="img/cledor_page.jpg" alt="">
+                            <i class="xi-close"></i>
+                        </div><!-- cledor_page end -->
+
+                    </div><!-- cledor_p end -->
+                </div> <!-- cledor_left end -->
+                <div class="cledor_mockup">
+                    <img src="img/cledor_mockup.png" alt="">
+                </div><!-- cledor_mockup end -->
+            </div><!-- cledor end -->
+
+        </div>
+
+        <div class="section" id="section4">
+
+            <div class="yoo">
+                <div class="animation_yoo">
+                    <img src="img/yoo.jpg" alt="">
+                </div>
+
+                <div class="yoo_right">
+                    <div class="yoo_title">
+                        <h3>유휴</h3>
+                        <p>기본형 페이지</p>
+                    </div><!-- yoo_title end -->
+
+                    <div class="program">
+                        <ul>
+                            <li><span>참여도</span></li>
+                            <li>기획/디자인/코딩 100%</li>
+                        </ul>
+
+                        <ul>
+                            <li><span>프로그램</span></li>
+                            <li>Photoshop</li>
+                            <li>XD</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div><!-- program end -->
+
+                    <div class="yoo_p">
+                        <p>‘살고 싶은 동네’ 라는 의미에 맞춰<br/>
+                            깔끔하고 차분한 분위기로 디자인 하였습니다.<br/>
+                            멤버십과 유휴 동네의 소식,  빈집 찾기 등 필요한<br/>
+                            정보만을 담아 파악하기 쉽도록 리뉴얼 하였습니다.</p>
+                        
+                        <button class="btn3">상세페이지</button>
+                        <button onclick="window.open('http://hymu.dothome.co.kr/yoo/index.html#firstPage') ">홈페이지</button>
+
+                        <div class="yoo_page" id="y_page">
+                            <img src="img/yoo_page.jpg" alt="">
+                            <i class="xi-close"></i>
+                        </div><!-- yoo_page end -->
+
+                    </div><!-- yoo_p end -->
+                </div> <!-- yoo_right end -->
+            </div><!-- yoo end -->
+        </div>
+
+        <div class="section" id="section5">
+
+            <div class="weharang">
+
+                <div class="weharang_left">
+                    <div class="weharang_title">
+                        <h3>코비젼 위하랑</h3>
+                        <p>기본형 카피</p>
+                    </div><!-- weharang_title end -->
+
+                    <div class="program">
+                        <ul>
+                            <li><span>참여도</span></li>
+                            <li>코딩 100%</li>
+                        </ul>
+
+                        <ul>
+                            <li><span>프로그램</span></li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div><!-- program end -->
+
+                    <div class="weharang_p">
+                        <p>
+                            코비젼 위하랑 홈페이지를 카피하여
+                            제작하였습니다.
+                        </p>
+                        
+                        <button onclick="window.open('http://hymu.dothome.co.kr/weharang/index.html') ">홈페이지</button>
+                    </div><!-- weharang_p end -->
+                </div> <!-- weharang_left end -->
+
+                <div class="weharang_mockup">
+                    <img src="img/weharang.jpg" alt="">
+                </div><!-- weharang_mockup end -->
+            </div><!-- weharang end -->
+
+        </div>
+
+        <div class="section" id="section6">
+
+            <div class="non">
+                <div class="non_mockup">
+                    <img src="img/non.png" alt="">
+                    <img src="img/non_menu.png" alt="">
+                    <img src="img/non_sub.png" alt="">
+                </div><!-- non_mockup end -->
+
+                <div class="non_right">
+                    <div class="non_title">
+                        <h3>논픽션</h3>
+                        <p>앱 디자인</p>
+                    </div><!-- yoo_title end -->
+
+                    <div class="program">
+                        <ul>
+                            <li><span>참여도</span></li>
+                            <li>기획/디자인 100%</li>
+                        </ul>
+
+                        <ul>
+                            <li><span>프로그램</span></li>
+                            <li>Photoshop</li>
+                            <li>XD</li>
+                        </ul>
+                    </div><!-- program end -->
+
+                    <div class="non_p">
+                        <p>논픽션의 브랜드 취지에 따라 차분하고<br/>
+                            고요한 분위기로 제작하였으며,<br/>
+                            자연적인 이미지를 강조하였습니다. </p>
+                        
+                        <button class="btn4">상세페이지</button>
+
+                        <div class="non_page">
+                            <img src="img/non_page.jpg" alt="">
+                            <i class="xi-close"></i>
+                        </div><!-- non_page end -->
+
+                    </div><!-- non_p end -->
+                </div> <!-- non_right end -->
+            </div><!-- non end -->
+        </div>
+
+      
+        <div class="section" id="section8">
+
+            <div class="footer">
+                <div class="f_title">
+                    <h1>THANK YOU !</h1>
+                    
+                    <div class="img">
+                        <img src="img/smile.png" alt="">
+                    </div><!-- img end -->
+                </div><!-- f_title end -->
+
+                <div class="ani25"></div>
+                <div class="ani26"></div>
+
+        
+                <div class="f_info">
+                    <ul>
+                        <li>010.5713.2079</li>
+                        <li>web_sg2079@naver.com</li>
+                    </ul><!-- left end -->
+        
+                    <ul>
+                        <li><a href="">이력서 다운로드</a></li>
+                        <li><a href="img/현난화_포트폴리오.pdf" download target="_blank">포트폴리오 다운로드</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li>2022 ver</li>
+                        <li>WEB PUBLISHER</li>
+                    </ul>
+                </div> <!-- info end -->
+            </div><!-- footer end -->
+        </div>
+
+    </div> <!-- #fullpage end -->
+</body>
+</html>

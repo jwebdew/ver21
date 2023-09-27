@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family:'Noto Sans KR';
+    font-style:normal;
+    font-weight:100;   
+    src:local('Noto Sans CJK KR Thin'),
+        url(../webfont/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'),
+        url(../webfont/NotoSansKR-Thin.woff) format('woff'),
+        url(../webfont/NotoSansKR-Thin.ttf) format('truetype');   
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight:300;
+    src:local('Noto Sans CJK KR Light'),
+        url(../webfont/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+        url(../webfont/NotoSansKR-Light.woff) format('woff'),
+        url(../webfont/NotoSansKR-Light.ttf) format('truetype');   
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight:400;    
+    src:local('Noto Sans CJK KR Regular'),
+        url(../webfont/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../webfont/NotoSansKR-Regular.woff) format('woff'),
+        url(../webfont/NotoSansKR-Regular.ttf) format('truetype');   
+    }
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight:500;
+    src:local('Noto Sans CJK KR Medium'),
+        url(../webfont/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+        url(../webfont/NotoSansKR-Medium.woff) format('woff'),
+        url(../webfont/NotoSansKR-Medium.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight:700;
+    src:local('Noto Sans CJK KR Bold'),
+        url(../webfont/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../webfont/NotoSansKR-Bold.woff) format('woff'),
+        url(../webfont/NotoSansKR-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight:900;
+    src:local('Noto Sans CJK KR Black'),
+        url(../webfont/NotoSansKR-Black.eot?#iefix) format('embedded-opentype'),
+        url(../webfont/NotoSansKR-Black.woff) format('woff'),
+        url(../webfont/NotoSansKR-Black.ttf) format('truetype');  
+}

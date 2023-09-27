@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{display: block;
+text-decoration: none;
+color: #333;}
+
+header{
+    
+    text-align: center;
+    background-color: rgba(45,139, 86, 0.1);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 9;
+    width: 100%;
+}
+header div{
+    width: 80%;
+    margin: 0 auto;
+}
+header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+header div > a {
+    width: 120px;
+    display: inline-block;
+    float: left;
+}
+header > div > a > img{
+    width: 321px;
+    padding: 40px 0;
+}
+header > div > nav{
+    padding-top: 20px;
+}
+header div >nav > ul .depth01{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+header div > nav > ul > li > a{
+    color: #fff;
+    padding: 0 34px;
+    line-height: 70px;
+}
+header div > nav > ul > li > ul > li > a{
+    color: #a9aab3;
+} 
+header div > nav > ul > li:hover >a{
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    color: #929BFA;
+}
+header div > nav > ul > li:hover .depth02{
+    display: block;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+    line-height: 30px;
+    color: #a9aab3;
+    padding:20px 0;
+}
+header div > nav > ul > li > ul >li:hover a{
+    color: #929BFA;
+    /* color: #a9aab3; */
+}
+
+.depth02{
+    background-color: #fff;
+    display: none;
+}
+
+.main_visual {
+    height: 100vh;
+    background: url('../img/img_idxSldBck01.png') center center / cover no-repeat;
+    position: relative;
+}
+.main_visual div{
+    width: 100%;
+    position: absolute;
+    top:50%;
+}
+header .fixed {
+    height: 140px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    
+}
+header .fixed img{
+    padding-top: 40px;
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+header .fixed > div > a{
+    width: 140px;
+    background: url(../img/img_qckBck.png) no-repeat;
+    height: 140px;
+    line-height: 20px;
+    width: 0 auto;
+    display: inline-block;
+    color: #fff;
+    border-radius: 8px;
+
+}
+header .fixed button {
+    width: 115px;
+    border:none;
+    height: 55px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+header .fixed div{
+    width: 30px;
+    height: 140px;
+}
+header .fixed div a span{
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+}
+header .fixed div a span:nth-of-type(2){
+    font-size: 12px;
+}
+header .fixed .hidden ul{
+    display: none;
+}

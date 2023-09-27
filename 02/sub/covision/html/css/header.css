@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+header div::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header div h1 {
+    float: left;
+    margin-left: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+header div nav {
+    float: right;
+    margin-right: 250px;
+    text-align: center;
+}
+header nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
+nav > ul > li .depth02 li {
+    line-height: 30px;
+}
+nav > ul > li .depth02 li:first-of-type {
+    margin-top: 20px;
+}
+nav > ul > li .depth02 li:last-of-type {
+    margin-bottom: 20px;
+}
+nav > ul > li > a {
+    color: white;
+    font-weight: bold;
+}
+.depth01 {
+    width: 130px;
+    margin-top: 25px;
+}
+.depth01:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+.depth01:hover > a {
+    color: #0065ea;
+    border-bottom: 1px solid #eee;
+}
+.depth01 > a {
+    height: 50px; width: 130px;
+    line-height: 50px;
+}
+.depth02 {
+    opacity: 0;
+}
+.depth02 li a {
+    font-weight: bold;
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.depth01:hover .depth02 {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main_visual {
+    background: url('../img/img_idxSldBck03.png')0 0 / cover no-repeat;
+    height: 860px;
+    position: relative;
+}
+.main_visual div {
+    width: 1280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.main_visual div h2 {
+    font-size: 45px;
+    font-weight: lighter;
+    letter-spacing: -3px;
+    margin-bottom: 45px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div span {
+    font-weight: 700;
+    margin-left: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div p {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 95px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div .btn {
+    margin: 0;
+    width: 144px; height: 35px;
+    border: 2px solid white;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 2px 3px 0px 0px rgb(0 0 0 / 20%);
+    transition: all 0.5s;
+    font-size: 16px;
+}
+.main_visual div .btn a {
+    color: white;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.main_visual div .btn:hover {
+    box-shadow: 5px 6px 0px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-3px) translateY(-3px);
+}
+.main_visual img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+}
+
+ 

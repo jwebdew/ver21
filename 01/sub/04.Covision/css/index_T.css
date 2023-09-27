@@ -1,0 +1,563 @@
+@charset "utf-8";
+*{
+    margin: 0; padding: 0;
+}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display: block;
+    color: #333;}
+html, body{
+    color: #333;
+}
+
+/* header */
+header{
+    width: 100%;/* 
+    background-color: teal; */
+    height: 100px;
+    position: absolute;/* 메비 그림올릴려고 메인비쥬얼에 앱솔 줘버리면 밑에게 딸려 올라오니 헤더에 줘야함 */
+    /* fixed는 스크롤 내려도 상단에 고정 */
+    top: 0;
+    left: 0;
+    /* 잡았는데 급 2차메뉴가 안나올거임- 일단 정상적용 된거임
+    안보이는 이유는 순서가 밑에 있기때문에 가려서 안보임
+    header< main_visual< ... 
+    그럼 올려주면 됨 z-index로
+    z-index는 position:absolute;가 있어야 쓸 수 있음*/
+    z-index: 99;
+}
+header > div {
+    width: calc(100% - 120px);/* 계산(총100% - 120px 뺄거다.무조건 띄어쓰기 해야함! 이렇게 넣으면 검사값에 마진 좌우 60px씩 들어가있음) */
+    margin: 0 auto;
+    position: relative;/* 부모값에 포지션 렐러 잡혀져 있어야함
+    안돼있으면 body가 중심축이 돼서 그 앞 컨텐츠들까지 다 틀어짐 */
+    height: 100%;/* height값을 한번 더 잡아줘야 div영역 안에서 앱솔 위치 잡힘 */
+}
+header > div h1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* 수직(위아래에서)가운데정렬 거의 공식 */
+}
+header nav {
+    float: right; /* 완전 우측은 안되니까 마진으로 띄어줌 */
+    margin-right: 200px;
+    line-height: 100px;/* 수직가운데 정렬 맞춰주고 떨어진 2차 메뉴들은 나중에 정렬하는걸로 */
+    margin-top: 20px;
+}
+header nav .depth01{
+    display: inline-block;
+    vertical-align: top;/* 인라인요소나 인라인블럭일때 사용가능
+    top,middle,bottom 각 배치 */
+    width: 125px;
+    text-align: center;
+    height: 60px;/* 위에 꽉차는것 크기 60으로 조정 */
+    line-height: 60px;/* 설정하고 틀어지는거 위에 마진탑20주기 
+    그러고 후버시 똑같아야 하니까 depth01:hover에 height: 100%;*/
+   
+}
+header nav .depth01 > a { /* 직계자식*/
+    color: #fff;
+}
+header nav .depth02{
+    padding: 30px 0;
+    display: none;
+}
+header nav .depth02 li{
+    line-height: 40px;
+    font-size: 14px;
+}
+header nav .depth02 li a{
+    color: #999;
+}
+header nav .depth01:hover{ 
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    height: 100%;
+}
+header nav .depth01:hover .depth02{ 
+    display: block;
+}
+header nav .depth01:hover > a{
+    color: #5967f7;
+    border-bottom: 1px solid #ccc;
+}
+header aside {/* 플롯 라이트 줘서 왼쪽 남는 공간으로 애들이 올라오는데 우린 오른쪽 aside까지만 네비 허용해줄것이니 aside에 
+    clear:both; 주기 따로 애프터 안주고 이것만 줘도 됨*/
+    clear: both;
+    position: fixed;
+    right: 60px;
+    top: 20px;
+}
+header aside div{
+    width: 140px;
+    height: 140px;
+    background: url('../img/img_qckBck.png') center center / cover no-repeat;
+    text-align: center;
+    position: relative;
+}
+header aside div a{
+    width: 100%;/* 앱솔쓰면 위치안착을 위해 위더스값 잡아주는게 좋음 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header aside div img {
+    width: 115px;/* 맞춰두면 하이트는 자동으로 맞춰짐 */
+    margin-bottom: 15px;
+}
+header aside div p{
+    font-weight: bold;
+    color: #fff;
+}
+header aside div p span{
+    display: block; /* br주면 굳이 블럭 안줘도 됨 */
+    font-size: 12px;
+}
+header aside button{
+    width: 100%;/* 부모가 가진영역이니 100% */
+    height: 55px;
+    background-color: #00264d;
+    color: #fff;
+    border:0;
+    font-size: 15px;
+    border-radius: 0 0 15px 15px;
+    cursor:pointer;/* 올리면 마우스모양 손모양으로 바뀌는것 */
+}
+header aside > a{ /* div > a 아님! */
+    background-color: #00264d;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* .main_visual */
+.main_visual{
+    height: 860px;
+    background: url('../img/img_idxSldBck01.png') center center / cover no-repeat;
+}
+.main_visual .main_visual_in{
+    width: 1280px;
+    margin:0 auto;
+    position: relative;/* 
+    background-color: violet; */
+    height: 100%;/* 필수! 이거 없으면 포지션 자리 안잡힘 */
+
+}
+.main_visual .main_visual_in div{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);/* 본인이 가지고 있는 위치에서 -본인의 반대방향 */
+}
+.main_visual .main_visual_in > div h2 {
+    font-size: 45px;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+}
+.main_visual .main_visual_in > div h2 span{
+    font-weight: bold;
+}
+.main_visual .main_visual_in > div p{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+/* .main_visual .main_visual_in > div a */
+.btn{/* 아래 자세히 보기 버튼도 동일하니 class명 줘서 공통스타일주기 */
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 3px 3px rgba(0, 0, 0, .2);
+    transition: all .4s;
+}
+/* .main_visual .main_visual_in > div a:hover */
+.btn:hover/* 아래 자세히 보기 버튼도 동일하니 class명 줘서 공통스타일주기, 호버도 마찬가지*/{
+    box-shadow: 5px 5px rgba(0, 0, 0, .2);
+    transform: translate(-3px, -3px);
+    /* transition:.4s; 트랜지션은 호버가 아니라 호버설정한 태그에 */
+}
+.main_visual .main_visual_in img{
+    position: absolute;
+    top: 50%;
+    right: -120px;/* 중심축에서 이미지가 살짝 밀려있으니 0에서 옮기기 */
+    transform: translateY(-50%);
+}
+
+/* .news */
+.news{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+.news::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.news > div{
+    float: left;/* 디스플레이 인라인 블럭으로 올릴 수 있는데 여백이 4px정도 생기니 이럴경우는 딱 붙는 플롯추천 */
+    width: 50%; /* px로 나눌수 있지만 반반이니 편하게 %로 */
+    /* 플룻 레프트 영향으로 cont01딸려 올라오는데 그럼.news로 가이드 라인을 쳐서(clear:both;)정리 */
+    padding: 0 30px;
+    box-sizing: border-box;/* 패딩포함 위더스값 하이트값 잡기 */
+}
+.news > div:first-child{
+    border-right: 1px solid #ccc;
+}
+.news > div ul::after{
+    content: '';
+    display: block;
+    clear: both;
+    /* 클리어 보스 안하면 해당영역 백그라운드 안만들어지고 뒤에꺼 딸려올라옴*/
+}
+.news > div ul{/* 
+    background-color: #5967f7; */
+}
+.news > div ul li{
+    float: left;
+}
+.news > div ul li:first-child{
+    font-weight: bold;
+    font-size:20px;
+    color:#5967f7;
+    margin-right: 20px;
+}
+.news > div ul li:nth-child(2){
+    width: 60%;/* 오른쪽 떨어진 날짜 올리기 대신 다른 글자 떨어지는데*/
+    white-space: nowrap;/* 요걸로 한줄 나열 시킨후  */
+    text-overflow: ellipsis;/* 늘어난 말 말줄임표로 ,,,으로 표시 */
+    overflow: hidden;/* 히든해줘야 ,,,됨 */
+}
+.news .right div{
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.news .right div a {
+    width: 50px;
+    height: 50px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 50px;
+    border-right: 0;
+    border-bottom: 0;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #ccc;
+    transition:ease-in-out .5s;
+}
+.news .right div a:hover{
+    color: #5E6AF9;
+}
+
+.news .right >div a::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.news .right >div a span{
+    position: absolute;
+    left: -99999px;
+}
+
+/* .cont01 */
+.cont01{
+    text-align: center;
+    background-color: #5E6AF9;
+    color:#fff;
+    padding: 130px 0;/* height말고 상하 패딩으로 크기 늘려도 됨 */
+}
+.cont01 p{
+    font-size:30px;
+    font-weight: bold;
+}
+.cont01 h2{
+    font-size: 46px;
+    font-weight:lighter;
+    margin-top: 30px;
+}
+.cont01 h2 span{
+    font-weight: bold;
+}
+
+/* .cont02 */
+.cont02{
+    background-color: #16b5de;
+    padding: 130px 0;
+    
+}
+.cont02 .cont02_in{
+    width: 1280px;
+    margin: 0 auto;
+    
+}
+.cont02_in::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont02 .cont02_in img{
+    float: left;
+}
+.cont02 .cont02_in .cont_title{
+    float: right;
+}
+.cont_title{/* 공통 스타일 적용할거면 앞에 부모 붙이면 해당것만 적용됨
+    그래서 지 혼자만 써둘 것  */
+    
+}
+.cont_title h4{
+    font-size:30px;
+    color: #fff;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;/* 부모값에 렐러 */
+    letter-spacing: -1px;
+}
+.cont_title h4 span{
+    font-weight: bold;
+}
+.cont_title dl{
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 75px;
+    letter-spacing: -1px;
+}
+.cont_title dl dt{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.cont_title dl dd{
+    letter-spacing: -1px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* 가상선택자 Before,after로 보더에 원형 주는법 */
+.cont_title h4::before{
+    content: '';
+    width: 10px;/* before쓰려면 width값 필요 *//* but, before 가상선택자는 인라인 요소라 위더스 하이트값 안먹음. 그래서 포지션 앱솔 */
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    position: absolute; 
+    left: 0;
+    bottom: -5px;
+}.cont_title h4::after{
+    content: '';
+    width: 10px;/* before쓰려면 width값 필요 *//* but, before 가상선택자는 인라인 요소라 위더스 하이트값 안먹음. 그래서 포지션 앱솔 */
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    position: absolute; 
+    right: 0;
+    bottom: -5px;
+}
+
+/* .cont04 */
+.cont04{
+    width: 1280px;
+    margin: 130px auto;
+    text-align: center;
+    margin-bottom: 260px;
+}
+.cont04 .tab ul{
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.cont04 .tab ul li{
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+}
+.cont04 .tab ul li.on{/* li .on 띄워쓰기하면 안먹음 */
+    color: #5967f7;
+    position: relative;
+}
+.cont04 .tab ul li.on::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #5967f7;
+    position:absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 20px;/* 밑줄 border 곡률 */
+}
+.cont04 .tab_cont{
+    position: relative;
+}
+.cont04 .tab_cont div{
+    position: absolute;
+    top: 420px;
+    left: 100px;
+    text-align: left;
+}
+.cont04 .tab_cont div p:first-child{
+    font-size: 26px;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+.cont04 .tab_cont div span{
+    font-weight: bold;
+    color: #5967f7;
+}
+.cont04 .tab_cont div p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#5967f7;
+}
+.cont04 .tab_cont div p:nth-child(3){
+    letter-spacing: -2px;
+}
+
+/* .cont05 */
+.cont05{
+    background-color: #f7f7f7;
+    padding:130px 0;
+}
+.cont05 .cont05_in {
+    width: 1280px;
+    margin: 0 auto;
+}
+.title{
+    position: relative;
+    margin-bottom: 50px;
+}
+.title p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 30px;
+}
+.title h3{
+    font-size: 46px;
+    font-weight: lighter;
+    color: #666;
+}
+.title .btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #5E6AF9;
+    border:2px solid #5967f7;
+    background-color: #fff;
+    padding: 0 20px;
+}
+.cont05 .cont05_wrap{
+    position: relative;/* 슬라이드 버튼 중심축을 위해 */
+}
+.cont05 .cont05_in .cont05_wrap .cont05_list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont05 .cont05_in .cont05_wrap .cont05_list > div{
+    width: 413.3px;
+    margin-right: 20px;
+    /* display: inline-block; */
+    /* 딱 맞게 안들어가니 플룻쓰기 */
+    float: left;
+    background-color: #fff;
+    border-radius: 20px;/* 밑에만 적용되는데 img가 가려서그럼
+    이럴땐 overflow:hidden; */
+    overflow: hidden;
+    transition: all .3s;
+}
+.cont05 .cont05_wrap .cont05_list > div:last-child{
+    margin-right: 0;
+}
+.cont05 .cont05_wrap .cont05_list > div img{
+    width: 100%;
+}
+.cont05 .cont05_wrap .cont05_list ul {
+    padding:20px 30px;
+}
+.cont05 .cont05_wrap .cont05_list ul li:first-child{
+    font-weight: bold;
+    color: #16b5de;
+    margin-bottom: 20px;
+    word-break: keep-all;/* 단어로 줄바꿈 */
+}
+.cont05 .cont05_wrap .cont05_list ul li:nth-child(2){
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    color: rgb(70, 70, 70);
+}
+.cont05 .cont05_wrap .cont05_list ul li:nth-child(3){
+    white-space: nowrap;/* 말줄임표...만들기 3종*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 40px;
+}
+.cont05 .cont05_wrap span{/* 날리고 아이콘스타일은 li에 넣기 */
+    position: absolute;
+    left: -999999px;
+}
+.cont05 .cont05_wrap .cont05_list ul li:nth-child(4){
+    font-size: 30px;
+    color: #ccc;
+    text-align: right;
+}
+.cont05 .cont05_wrap .slide_btn button{
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: ease-in-out .5s;
+    color: #ccc;
+
+}
+.cont05 .cont05_wrap .slide_btn button:first-child{
+    left: -110px;/* 버튼태그에 이미 포지션 앱솔있기에 여긴 위치만 가능 */
+}
+.cont05 .cont05_wrap .slide_btn button:nth-child(2){
+    right: -110px;
+}/* 이렇게 하면 수직 가운데 정렬 가능 */
+.cont05 .cont05_wrap .cont05_list > div:hover{
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, .3);
+    transform: translateY(-15px);/* 상단div에 트랜지션 추가해서 부드럽게 만들기 */
+}
+.cont05 .cont05_wrap .cont05_list > div:hover ul li:nth-child(4){
+    color: #5967f7;
+}
+.cont05 .cont05_wrap .slide_btn button:hover{
+    color: #5967f7;
+    cursor: pointer;/* 마우스 올렸을 때 손모양 */
+}
